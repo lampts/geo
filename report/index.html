@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Visibility Report — Vietnamese Banking</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <meta name="description" content="GEO — AI brand-visibility report for Vietnamese banking: how often banks surface in AI answers, with an AI-Equity Index." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="./css/healy.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">AI Visibility Report</p>
+      <h1 id="title">Loading…</h1>
+      <p class="dek" id="dek"></p>
+      <p class="byline" id="byline"></p>
+    </header>
+    <div class="demo-banner" id="demoBanner" style="display:none">
+      <strong>Demo data.</strong> These figures are synthetic placeholders so the dashboard renders without API spend.
+      Add your API keys and run <code>python -m pipeline.build</code> to replace them with real model answers.
+    </div>
+
+    <section class="stats" id="stats"></section>
+
+    <main id="figures"></main>
+
+    <section class="prose">
+      <h2>Key insights</h2>
+      <p class="src" id="insightsSrc"></p>
+      <div id="analysis"></div>
+      <div class="glance" id="glance"></div>
+    </section>
+
+    <section>
+      <div class="fig-head" style="max-width:760px;margin:64px auto 0;">
+        <div class="fig-num">Evidence</div>
+        <div class="fig-title">Featured snippets</div>
+        <p class="fig-sub">Representative quotes from the AI answers — the trail behind the numbers.</p>
+      </div>
+      <div class="snippets" id="snippets"></div>
+    </section>
+
+    <footer>
+      Methodology: 30 prompts about Vietnamese banking products/services, each asked on every available model.
+      Answers parsed for brand mentions (alias matching), citations (URL extraction) and per-brand sentiment (LLM-scored).
+      Metrics aggregated into visibility %, share of voice, sentiment and source mix; insights written by Opus 4.8.
+      Sentiment is suppressed for any brand with fewer than 10 mentions (too few to score reliably). Each brand domain
+      is also probed for an <code>llms.txt</code> file (llmstxt.org) as an AI-readiness signal.
+    </footer>
+  </div>
+
+  <script type="module">
+    import { render } from "./js/plots.js";
+    fetch("./summary.json", { cache: "no-store" })
+      .then((r) => r.json())
+      .then(render)
+      .catch((e) => {
+        document.getElementById("title").textContent = "Could not load summary.json";
+        document.getElementById("dek").textContent = "Run `python -m pipeline.demo` (or build) and serve this folder over HTTP.";
+        console.error(e);
+      });
+  </script>
+</body>
+</html>

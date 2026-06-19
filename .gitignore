@@ -1,0 +1,26 @@
+# Derived analysis DB (rebuild with `uv run python build_db.py`)
+brandllm.duckdb
+brandllm.duckdb.wal
+
+# uv environment
+.venv/
+
+# cached raw run data (large; reproducible from the pipeline)
+data/raw/
+
+# python
+__pycache__/
+*.pyc
+
+# reproducible pipeline artifacts (raw answers, audit logs, extracted)
+build/
+
+# confidential third-party material — never publish (NielsenIQ proprietary)
+niq_report.pdf
+baseline_report.md
+
+# claude harness internal
+.claude/
+
+# logs / scratch
+*.log

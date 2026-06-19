@@ -1,0 +1,9 @@
+{
+  "_note": "USD per 1M tokens. Source: llm-prices.com (fetched 2026-06-18). reasoning tokens billed at output rate. search_per_call = web-search tool fee (USD/request) — NOT on llm-prices.com (token pricing only); set to 0 here, adjust if your provider bills it separately. GPT-5.5 uses the <=272k input tier.",
+  "models": [
+    {"model_id": "gpt-5.5",           "input_per_m": 5.0,  "output_per_m": 30.0, "search_per_call": 0.0},
+    {"model_id": "claude-opus-4-6",   "input_per_m": 5.0,  "output_per_m": 25.0, "search_per_call": 0.0},
+    {"model_id": "gemini-3.5-flash",  "input_per_m": 1.5,  "output_per_m": 9.0,  "search_per_call": 0.0},
+    {"model_id": "deepseek-v4-flash", "input_per_m": 0.14, "output_per_m": 0.28, "search_per_call": 0.0}
+  ]
+}

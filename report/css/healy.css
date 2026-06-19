@@ -1,0 +1,105 @@
+/* Kieran-Healy-flavoured theme: quiet palette, generous whitespace, serif
+   headings, a single narrow reading column, figures that breathe. The charts
+   themselves (Observable Plot) carry the grammar-of-graphics aesthetic:
+   Cleveland dot plots, small multiples, direct labels, faint gridlines. */
+
+:root {
+  --ink: #1a1a1a;
+  --ink-soft: #555;
+  --ink-faint: #8a8a8a;
+  --paper: #fdfdfb;
+  --rule: #e7e5df;
+  --own: #c44536;        /* warm highlight reserved for the own brand */
+  --accent: #2a6f8e;     /* muted teal-blue for everything else        */
+  --pos: #4c956c;
+  --neg: #bc4749;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Source Serif Pro", Georgia, serif;
+  --sans: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --measure: 760px;
+  --figure: 940px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.wrap { max-width: var(--figure); margin: 0 auto; padding: 64px 28px 120px; }
+
+/* ---- masthead ---- */
+.masthead { max-width: var(--measure); margin: 0 auto 8px; }
+.eyebrow {
+  font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 14px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 600; font-size: 40px; line-height: 1.12;
+  letter-spacing: -0.01em; margin: 0 0 12px;
+}
+.dek { font-family: var(--serif); font-size: 20px; font-style: italic; color: var(--ink-soft); margin: 0 0 8px; }
+.byline { font-size: 14px; color: var(--ink-faint); margin: 0; }
+.byline code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
+
+.demo-banner {
+  max-width: var(--measure); margin: 22px auto 0; padding: 10px 16px;
+  background: #fff7ed; border: 1px solid #f3d9b7; border-radius: 6px;
+  font-size: 14px; color: #92591b;
+}
+
+/* ---- own-brand stat strip ---- */
+.stats { max-width: var(--measure); margin: 40px auto; display: flex; flex-wrap: wrap; gap: 0; border-top: 2px solid var(--ink); }
+.stat { flex: 1 1 140px; padding: 16px 18px 18px 0; border-bottom: 1px solid var(--rule); }
+.stat .k { font-family: var(--serif); font-size: 32px; font-weight: 600; line-height: 1; }
+.stat .k.own { color: var(--own); }
+.stat .l { font-size: 12.5px; color: var(--ink-faint); margin-top: 6px; letter-spacing: 0.02em; }
+
+/* ---- figures ---- */
+figure { margin: 64px 0 0; }
+figure.narrow { max-width: var(--measure); margin-left: auto; margin-right: auto; }
+.fig-head { max-width: var(--measure); margin: 0 auto 14px; }
+.fig-num { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.fig-title { font-family: var(--serif); font-size: 24px; font-weight: 600; margin: 4px 0 4px; }
+.fig-sub { font-size: 15px; color: var(--ink-soft); margin: 0; max-width: 640px; }
+.plot { margin-top: 8px; overflow-x: auto; }
+figcaption { max-width: var(--measure); margin: 12px auto 0; font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--ink-faint); }
+
+/* Observable Plot tweaks */
+.plot svg { font-family: var(--sans) !important; }
+
+/* ---- prose / insights ---- */
+.prose { max-width: var(--measure); margin: 72px auto 0; }
+.prose h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; margin: 0 0 6px; }
+.prose .src { font-size: 13px; color: var(--ink-faint); margin: 0 0 28px; }
+.prose .src code { font-family: ui-monospace, Menlo, monospace; }
+.analysis-item { margin: 0 0 26px; }
+.analysis-item h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; margin: 0 0 6px; }
+.analysis-item p { margin: 0; color: var(--ink-soft); }
+.glance { margin: 28px 0 0; padding: 22px 24px; background: #fff; border: 1px solid var(--rule); border-radius: 8px; }
+.glance .l { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 12px; }
+.glance ul { margin: 0; padding-left: 20px; }
+.glance li { margin: 0 0 8px; color: var(--ink); }
+
+/* ---- snippets ---- */
+.snippets { max-width: var(--measure); margin: 64px auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.snippet { padding: 18px 20px; background: #fff; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 4px; }
+.snippet.positive { border-left-color: var(--pos); }
+.snippet.negative { border-left-color: var(--neg); }
+.snippet q { font-family: var(--serif); font-style: italic; font-size: 15.5px; color: var(--ink); }
+.snippet .meta { margin-top: 10px; font-size: 12.5px; color: var(--ink-faint); }
+.snippet .meta b { color: var(--ink-soft); }
+
+footer { max-width: var(--measure); margin: 80px auto 0; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-faint); }
+
+@media (max-width: 700px) {
+  h1 { font-size: 30px; }
+  .snippets { grid-template-columns: 1fr; }
+  body { font-size: 16px; }
+}
