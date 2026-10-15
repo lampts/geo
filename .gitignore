@@ -24,3 +24,6 @@ baseline_report.md
 
 # logs / scratch
 *.log
+
+# secrets
+.env

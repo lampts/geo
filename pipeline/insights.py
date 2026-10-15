@@ -189,10 +189,26 @@ def refresh_summary():
         print("  -", a["heading"])
 
 
+def apply_in_session(path, model="claude-opus-5-5"):
+    """Write insights authored in a Claude Code session (from --digest) into summary.json."""
+    s = json.load(open(config.SUMMARY_FILE, encoding="utf-8"))
+    data = json.load(open(path, encoding="utf-8"))
+    data["generated_by"] = f"{model} (in-session)"
+    s["insights"] = data
+    s["meta"]["insights_model"] = data["generated_by"]
+    json.dump(s, open(config.SUMMARY_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"Applied in-session insights ({len(data['analysis'])} sections) -> {config.SUMMARY_FILE}")
+
+
 if __name__ == "__main__":
     import sys
     if "--refresh" in sys.argv:
         refresh_summary()
+    elif "--digest" in sys.argv:   # print the digest an in-session model writes insights from
+        print(json.dumps(_digest_from_summary(json.load(open(config.SUMMARY_FILE, encoding="utf-8"))),
+                         ensure_ascii=False, indent=2))
+    elif "--apply" in sys.argv:    # python -m pipeline.insights --apply insights.json
+        apply_in_session(sys.argv[sys.argv.index("--apply") + 1])
     else:
         from pipeline import aggregate
         print(json.dumps(run(aggregate.run()), ensure_ascii=False, indent=2))

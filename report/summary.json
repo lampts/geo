@@ -3,15 +3,15 @@
     "title": "AI Visibility Report — Vietnamese Banking",
     "client": "VIB",
     "topic": "Vietnamese banking products & services",
-    "generated_at": "2026-06-18T13:05:43.501530Z",
+    "generated_at": "2026-10-15T14:45:29.974733Z",
     "answer_models": [
-      "DeepSeek V4",
-      "GPT-5.5",
-      "Gemini 3.5",
-      "Opus 4.6"
+      "DeepSeek V4.1",
+      "Gemini 4 Argon",
+      "Luna 6",
+      "Sonnet 5.5"
     ],
     "demo": false,
-    "run_id": "run2-customer",
+    "run_id": "2026-10-gen2",
     "store": "duckdb",
     "insights_model": "claude-opus-4-8"
   },
@@ -23,12 +23,12 @@
     "own_brand_id": 40,
     "own_brand": "Cake by VPBank",
     "models": [
-      "DeepSeek V4",
-      "GPT-5.5",
-      "Gemini 3.5",
-      "Opus 4.6"
+      "DeepSeek V4.1",
+      "Gemini 4 Argon",
+      "Luna 6",
+      "Sonnet 5.5"
     ],
-    "total_citations": 509,
+    "total_citations": 884,
     "sentiment_min_mentions": 10,
     "llms_txt_present": 2
   },
@@ -38,18 +38,18 @@
       "name": "Techcombank",
       "is_own": false,
       "rank": 1,
-      "visibility_pct": 74.2,
-      "sov_pct": 11.7,
-      "mentions": 89,
+      "visibility_pct": 85.0,
+      "sov_pct": 10.0,
+      "mentions": 102,
       "sentiment": {
-        "positive": 84,
-        "neutral": 5,
+        "positive": 89,
+        "neutral": 13,
         "negative": 0
       },
-      "positive_pct": 94.4,
+      "positive_pct": 87.3,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 4.82,
+      "aei": 4.21,
       "aei_band": "Strong"
     },
     {
@@ -58,17 +58,17 @@
       "is_own": false,
       "rank": 2,
       "visibility_pct": 71.7,
-      "sov_pct": 11.3,
+      "sov_pct": 8.4,
       "mentions": 86,
       "sentiment": {
-        "positive": 72,
-        "neutral": 14,
-        "negative": 0
+        "positive": 70,
+        "neutral": 15,
+        "negative": 1
       },
-      "positive_pct": 83.7,
+      "positive_pct": 81.4,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 4.4,
+      "aei": 3.44,
       "aei_band": "Strong"
     },
     {
@@ -76,160 +76,217 @@
       "name": "Vietcombank",
       "is_own": false,
       "rank": 3,
-      "visibility_pct": 53.3,
-      "sov_pct": 8.4,
-      "mentions": 64,
+      "visibility_pct": 70.8,
+      "sov_pct": 8.3,
+      "mentions": 85,
       "sentiment": {
         "positive": 61,
-        "neutral": 3,
-        "negative": 0
+        "neutral": 22,
+        "negative": 2
       },
-      "positive_pct": 95.3,
+      "positive_pct": 71.8,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 3.48,
+      "aei": 3.22,
       "aei_band": "Strong"
+    },
+    {
+      "brand_id": 5,
+      "name": "MB Bank",
+      "is_own": false,
+      "rank": 4,
+      "visibility_pct": 65.0,
+      "sov_pct": 7.6,
+      "mentions": 78,
+      "sentiment": {
+        "positive": 70,
+        "neutral": 8,
+        "negative": 0
+      },
+      "positive_pct": 89.7,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 3.26,
+      "aei_band": "Strong"
+    },
+    {
+      "brand_id": 1,
+      "name": "BIDV",
+      "is_own": false,
+      "rank": 5,
+      "visibility_pct": 60.8,
+      "sov_pct": 7.1,
+      "mentions": 73,
+      "sentiment": {
+        "positive": 55,
+        "neutral": 17,
+        "negative": 1
+      },
+      "positive_pct": 75.3,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 2.82,
+      "aei_band": "Moderate"
     },
     {
       "brand_id": 12,
       "name": "TPBank",
       "is_own": false,
-      "rank": 4,
-      "visibility_pct": 42.5,
-      "sov_pct": 6.7,
-      "mentions": 51,
+      "rank": 6,
+      "visibility_pct": 58.3,
+      "sov_pct": 6.8,
+      "mentions": 70,
       "sentiment": {
-        "positive": 48,
-        "neutral": 3,
+        "positive": 61,
+        "neutral": 9,
         "negative": 0
       },
-      "positive_pct": 94.1,
+      "positive_pct": 87.1,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 2.76,
+      "aei": 2.88,
       "aei_band": "Moderate"
     },
     {
       "brand_id": 13,
       "name": "VIB",
       "is_own": false,
-      "rank": 4,
-      "visibility_pct": 42.5,
-      "sov_pct": 6.7,
-      "mentions": 51,
-      "sentiment": {
-        "positive": 29,
-        "neutral": 22,
-        "negative": 0
-      },
-      "positive_pct": 56.9,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 2.23,
-      "aei_band": "Moderate"
-    },
-    {
-      "brand_id": 1,
-      "name": "BIDV",
-      "is_own": false,
-      "rank": 6,
-      "visibility_pct": 38.3,
-      "sov_pct": 6.1,
-      "mentions": 46,
-      "sentiment": {
-        "positive": 43,
-        "neutral": 3,
-        "negative": 0
-      },
-      "positive_pct": 93.5,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 2.48,
-      "aei_band": "Moderate"
-    },
-    {
-      "brand_id": 5,
-      "name": "MB Bank",
-      "is_own": false,
-      "rank": 6,
-      "visibility_pct": 38.3,
-      "sov_pct": 6.1,
-      "mentions": 46,
-      "sentiment": {
-        "positive": 43,
-        "neutral": 3,
-        "negative": 0
-      },
-      "positive_pct": 93.5,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 2.48,
-      "aei_band": "Moderate"
-    },
-    {
-      "brand_id": 40,
-      "name": "Cake by VPBank",
-      "is_own": true,
-      "rank": 8,
-      "visibility_pct": 29.2,
-      "sov_pct": 4.6,
-      "mentions": 35,
+      "rank": 7,
+      "visibility_pct": 45.8,
+      "sov_pct": 5.4,
+      "mentions": 55,
       "sentiment": {
         "positive": 33,
-        "neutral": 2,
-        "negative": 0
+        "neutral": 21,
+        "negative": 1
       },
-      "positive_pct": 94.3,
+      "positive_pct": 60.0,
       "sentiment_reliable": true,
-      "has_llms_txt": true,
-      "aei": 2.08,
+      "has_llms_txt": false,
+      "aei": 1.94,
       "aei_band": "Moderate"
     },
     {
-      "brand_id": 4,
-      "name": "Agribank",
+      "brand_id": 8,
+      "name": "ACB",
       "is_own": false,
-      "rank": 9,
-      "visibility_pct": 25.8,
-      "sov_pct": 4.1,
-      "mentions": 31,
+      "rank": 8,
+      "visibility_pct": 44.2,
+      "sov_pct": 5.2,
+      "mentions": 53,
       "sentiment": {
-        "positive": 28,
-        "neutral": 3,
+        "positive": 44,
+        "neutral": 9,
         "negative": 0
       },
-      "positive_pct": 90.3,
+      "positive_pct": 83.0,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 1.64,
-      "aei_band": "Moderate"
-    },
-    {
-      "brand_id": 35,
-      "name": "Timo",
-      "is_own": false,
-      "rank": 9,
-      "visibility_pct": 25.8,
-      "sov_pct": 4.1,
-      "mentions": 31,
-      "sentiment": {
-        "positive": 31,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": 100.0,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 1.72,
+      "aei": 2.14,
       "aei_band": "Moderate"
     },
     {
       "brand_id": 2,
       "name": "VietinBank",
       "is_own": false,
+      "rank": 9,
+      "visibility_pct": 43.3,
+      "sov_pct": 5.1,
+      "mentions": 52,
+      "sentiment": {
+        "positive": 35,
+        "neutral": 16,
+        "negative": 1
+      },
+      "positive_pct": 67.3,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 1.91,
+      "aei_band": "Moderate"
+    },
+    {
+      "brand_id": 4,
+      "name": "Agribank",
+      "is_own": false,
+      "rank": 10,
+      "visibility_pct": 40.8,
+      "sov_pct": 4.8,
+      "mentions": 49,
+      "sentiment": {
+        "positive": 34,
+        "neutral": 14,
+        "negative": 1
+      },
+      "positive_pct": 69.4,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 1.83,
+      "aei_band": "Moderate"
+    },
+    {
+      "brand_id": 40,
+      "name": "Cake by VPBank",
+      "is_own": true,
       "rank": 11,
+      "visibility_pct": 34.2,
+      "sov_pct": 4.0,
+      "mentions": 41,
+      "sentiment": {
+        "positive": 34,
+        "neutral": 7,
+        "negative": 0
+      },
+      "positive_pct": 82.9,
+      "sentiment_reliable": true,
+      "has_llms_txt": true,
+      "aei": 1.82,
+      "aei_band": "Moderate"
+    },
+    {
+      "brand_id": 10,
+      "name": "Sacombank",
+      "is_own": false,
+      "rank": 12,
+      "visibility_pct": 24.2,
+      "sov_pct": 2.8,
+      "mentions": 29,
+      "sentiment": {
+        "positive": 20,
+        "neutral": 8,
+        "negative": 1
+      },
+      "positive_pct": 69.0,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 1.08,
+      "aei_band": "Moderate"
+    },
+    {
+      "brand_id": 21,
+      "name": "HSBC Vietnam",
+      "is_own": false,
+      "rank": 13,
       "visibility_pct": 23.3,
-      "sov_pct": 3.7,
+      "sov_pct": 2.7,
+      "mentions": 28,
+      "sentiment": {
+        "positive": 22,
+        "neutral": 6,
+        "negative": 0
+      },
+      "positive_pct": 78.6,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 1.1,
+      "aei_band": "Moderate"
+    },
+    {
+      "brand_id": 35,
+      "name": "Timo",
+      "is_own": false,
+      "rank": 13,
+      "visibility_pct": 23.3,
+      "sov_pct": 2.7,
       "mentions": 28,
       "sentiment": {
         "positive": 25,
@@ -239,210 +296,191 @@
       "positive_pct": 89.3,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 1.47,
+      "aei": 1.02,
       "aei_band": "Moderate"
     },
     {
-      "brand_id": 24,
-      "name": "BVBank",
+      "brand_id": 30,
+      "name": "Shinhan Bank Vietnam",
       "is_own": false,
-      "rank": 12,
+      "rank": 15,
       "visibility_pct": 22.5,
-      "sov_pct": 3.6,
+      "sov_pct": 2.6,
       "mentions": 27,
       "sentiment": {
-        "positive": 18,
-        "neutral": 9,
+        "positive": 20,
+        "neutral": 7,
         "negative": 0
       },
-      "positive_pct": 66.7,
+      "positive_pct": 74.1,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 1.1,
-      "aei_band": "Moderate"
-    },
-    {
-      "brand_id": 8,
-      "name": "ACB",
-      "is_own": false,
-      "rank": 13,
-      "visibility_pct": 20.0,
-      "sov_pct": 3.2,
-      "mentions": 24,
-      "sentiment": {
-        "positive": 24,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": 100.0,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 1.34,
-      "aei_band": "Moderate"
-    },
-    {
-      "brand_id": 15,
-      "name": "MSB",
-      "is_own": false,
-      "rank": 14,
-      "visibility_pct": 15.8,
-      "sov_pct": 2.5,
-      "mentions": 19,
-      "sentiment": {
-        "positive": 14,
-        "neutral": 5,
-        "negative": 0
-      },
-      "positive_pct": 73.7,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 0.92,
+      "aei": 0.91,
       "aei_band": "Weak"
     },
     {
       "brand_id": 9,
       "name": "HDBank",
       "is_own": false,
-      "rank": 15,
-      "visibility_pct": 11.7,
-      "sov_pct": 1.8,
-      "mentions": 14,
+      "rank": 16,
+      "visibility_pct": 16.7,
+      "sov_pct": 2.0,
+      "mentions": 20,
       "sentiment": {
-        "positive": 12,
-        "neutral": 2,
+        "positive": 13,
+        "neutral": 7,
         "negative": 0
       },
-      "positive_pct": 85.7,
+      "positive_pct": 65.0,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 0.73,
+      "aei": 0.64,
       "aei_band": "Weak"
     },
     {
-      "brand_id": 21,
-      "name": "HSBC Vietnam",
-      "is_own": false,
-      "rank": 15,
-      "visibility_pct": 11.7,
-      "sov_pct": 1.8,
-      "mentions": 14,
-      "sentiment": {
-        "positive": 14,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": 100.0,
-      "sentiment_reliable": true,
-      "has_llms_txt": false,
-      "aei": 0.78,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 30,
-      "name": "Shinhan Bank Vietnam",
+      "brand_id": 24,
+      "name": "BVBank",
       "is_own": false,
       "rank": 17,
-      "visibility_pct": 8.3,
-      "sov_pct": 1.3,
-      "mentions": 10,
+      "visibility_pct": 15.0,
+      "sov_pct": 1.8,
+      "mentions": 18,
       "sentiment": {
-        "positive": 7,
-        "neutral": 3,
+        "positive": 10,
+        "neutral": 8,
         "negative": 0
       },
-      "positive_pct": 70.0,
+      "positive_pct": 55.6,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 0.47,
+      "aei": 0.54,
       "aei_band": "Weak"
     },
     {
-      "brand_id": 18,
-      "name": "OCB",
+      "brand_id": 15,
+      "name": "MSB",
       "is_own": false,
-      "rank": 17,
-      "visibility_pct": 8.3,
-      "sov_pct": 1.3,
-      "mentions": 10,
+      "rank": 18,
+      "visibility_pct": 14.2,
+      "sov_pct": 1.7,
+      "mentions": 17,
       "sentiment": {
-        "positive": 9,
+        "positive": 6,
+        "neutral": 11,
+        "negative": 0
+      },
+      "positive_pct": 35.3,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 0.51,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 34,
+      "name": "Standard Chartered Vietnam",
+      "is_own": false,
+      "rank": 19,
+      "visibility_pct": 11.7,
+      "sov_pct": 1.4,
+      "mentions": 14,
+      "sentiment": {
+        "positive": 13,
         "neutral": 1,
         "negative": 0
       },
-      "positive_pct": 90.0,
+      "positive_pct": 92.9,
       "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 0.46,
+      "aei": 0.52,
       "aei_band": "Weak"
     },
     {
       "brand_id": 42,
       "name": "TNEX",
       "is_own": false,
-      "rank": 19,
-      "visibility_pct": 7.5,
+      "rank": 20,
+      "visibility_pct": 10.0,
       "sov_pct": 1.2,
-      "mentions": 9,
+      "mentions": 12,
       "sentiment": {
         "positive": 9,
-        "neutral": 0,
+        "neutral": 3,
         "negative": 0
       },
-      "positive_pct": null,
-      "sentiment_reliable": false,
+      "positive_pct": 75.0,
+      "sentiment_reliable": true,
       "has_llms_txt": false,
-      "aei": 0.47,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 10,
-      "name": "Sacombank",
-      "is_own": false,
-      "rank": 20,
-      "visibility_pct": 5.8,
-      "sov_pct": 0.9,
-      "mentions": 7,
-      "sentiment": {
-        "positive": 6,
-        "neutral": 1,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.32,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 11,
-      "name": "SHB",
-      "is_own": false,
-      "rank": 20,
-      "visibility_pct": 5.8,
-      "sov_pct": 0.9,
-      "mentions": 7,
-      "sentiment": {
-        "positive": 5,
-        "neutral": 2,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.32,
+      "aei": 0.35,
       "aei_band": "Weak"
     },
     {
       "brand_id": 31,
       "name": "UOB Vietnam",
       "is_own": false,
-      "rank": 22,
-      "visibility_pct": 5.0,
-      "sov_pct": 0.8,
-      "mentions": 6,
+      "rank": 20,
+      "visibility_pct": 10.0,
+      "sov_pct": 1.2,
+      "mentions": 12,
       "sentiment": {
-        "positive": 6,
+        "positive": 12,
         "neutral": 0,
+        "negative": 0
+      },
+      "positive_pct": 100.0,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 0.53,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 11,
+      "name": "SHB",
+      "is_own": false,
+      "rank": 22,
+      "visibility_pct": 9.2,
+      "sov_pct": 1.1,
+      "mentions": 11,
+      "sentiment": {
+        "positive": 8,
+        "neutral": 3,
+        "negative": 0
+      },
+      "positive_pct": 72.7,
+      "sentiment_reliable": true,
+      "has_llms_txt": false,
+      "aei": 0.31,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 14,
+      "name": "LPBank",
+      "is_own": false,
+      "rank": 23,
+      "visibility_pct": 7.5,
+      "sov_pct": 0.9,
+      "mentions": 9,
+      "sentiment": {
+        "positive": 7,
+        "neutral": 2,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.35,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 18,
+      "name": "OCB",
+      "is_own": false,
+      "rank": 24,
+      "visibility_pct": 6.7,
+      "sov_pct": 0.8,
+      "mentions": 8,
+      "sentiment": {
+        "positive": 4,
+        "neutral": 4,
         "negative": 0
       },
       "positive_pct": null,
@@ -452,98 +490,60 @@
       "aei_band": "Weak"
     },
     {
-      "brand_id": 16,
-      "name": "Eximbank",
-      "is_own": false,
-      "rank": 22,
-      "visibility_pct": 5.0,
-      "sov_pct": 0.8,
-      "mentions": 6,
-      "sentiment": {
-        "positive": 2,
-        "neutral": 4,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.31,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 17,
-      "name": "SeABank",
-      "is_own": false,
-      "rank": 24,
-      "visibility_pct": 4.2,
-      "sov_pct": 0.7,
-      "mentions": 5,
-      "sentiment": {
-        "positive": 5,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.23,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 36,
-      "name": "Hong Leong Bank Vietnam",
-      "is_own": false,
-      "rank": 24,
-      "visibility_pct": 4.2,
-      "sov_pct": 0.7,
-      "mentions": 5,
-      "sentiment": {
-        "positive": 5,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.23,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 43,
-      "name": "Liobank",
-      "is_own": false,
-      "rank": 24,
-      "visibility_pct": 4.2,
-      "sov_pct": 0.7,
-      "mentions": 5,
-      "sentiment": {
-        "positive": 4,
-        "neutral": 1,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": true,
-      "aei": 0.22,
-      "aei_band": "Weak"
-    },
-    {
       "brand_id": 22,
       "name": "NCB",
       "is_own": false,
-      "rank": 27,
-      "visibility_pct": 3.3,
-      "sov_pct": 0.5,
-      "mentions": 4,
+      "rank": 25,
+      "visibility_pct": 5.0,
+      "sov_pct": 0.6,
+      "mentions": 6,
       "sentiment": {
-        "positive": 3,
+        "positive": 4,
+        "neutral": 2,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.2,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 27,
+      "name": "BAC A BANK",
+      "is_own": false,
+      "rank": 25,
+      "visibility_pct": 5.0,
+      "sov_pct": 0.6,
+      "mentions": 6,
+      "sentiment": {
+        "positive": 5,
         "neutral": 1,
         "negative": 0
       },
       "positive_pct": null,
       "sentiment_reliable": false,
       "has_llms_txt": false,
-      "aei": 0.18,
+      "aei": 0.2,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 25,
+      "name": "PVcomBank",
+      "is_own": false,
+      "rank": 27,
+      "visibility_pct": 4.2,
+      "sov_pct": 0.5,
+      "mentions": 5,
+      "sentiment": {
+        "positive": 3,
+        "neutral": 2,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.17,
       "aei_band": "Weak"
     },
     {
@@ -551,8 +551,46 @@
       "name": "Nam A Bank",
       "is_own": false,
       "rank": 27,
-      "visibility_pct": 3.3,
+      "visibility_pct": 4.2,
       "sov_pct": 0.5,
+      "mentions": 5,
+      "sentiment": {
+        "positive": 3,
+        "neutral": 2,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.17,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 16,
+      "name": "Eximbank",
+      "is_own": false,
+      "rank": 27,
+      "visibility_pct": 4.2,
+      "sov_pct": 0.5,
+      "mentions": 5,
+      "sentiment": {
+        "positive": 2,
+        "neutral": 3,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.19,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 17,
+      "name": "SeABank",
+      "is_own": false,
+      "rank": 30,
+      "visibility_pct": 3.3,
+      "sov_pct": 0.4,
       "mentions": 4,
       "sentiment": {
         "positive": 2,
@@ -562,241 +600,184 @@
       "positive_pct": null,
       "sentiment_reliable": false,
       "has_llms_txt": false,
-      "aei": 0.15,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 25,
-      "name": "PVcomBank",
-      "is_own": false,
-      "rank": 27,
-      "visibility_pct": 3.3,
-      "sov_pct": 0.5,
-      "mentions": 4,
-      "sentiment": {
-        "positive": 4,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.18,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 14,
-      "name": "LPBank",
-      "is_own": false,
-      "rank": 27,
-      "visibility_pct": 3.3,
-      "sov_pct": 0.5,
-      "mentions": 4,
-      "sentiment": {
-        "positive": 3,
-        "neutral": 1,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.18,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 34,
-      "name": "Standard Chartered Vietnam",
-      "is_own": false,
-      "rank": 31,
-      "visibility_pct": 2.5,
-      "sov_pct": 0.4,
-      "mentions": 3,
-      "sentiment": {
-        "positive": 3,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.14,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 37,
-      "name": "OceanBank",
-      "is_own": false,
-      "rank": 31,
-      "visibility_pct": 2.5,
-      "sov_pct": 0.4,
-      "mentions": 3,
-      "sentiment": {
-        "positive": 2,
-        "neutral": 1,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.12,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 27,
-      "name": "BAC A BANK",
-      "is_own": false,
-      "rank": 33,
-      "visibility_pct": 1.7,
-      "sov_pct": 0.3,
-      "mentions": 2,
-      "sentiment": {
-        "positive": 2,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.08,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 38,
-      "name": "MBV",
-      "is_own": false,
-      "rank": 33,
-      "visibility_pct": 1.7,
-      "sov_pct": 0.3,
-      "mentions": 2,
-      "sentiment": {
-        "positive": 2,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.07,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 20,
-      "name": "ABBank",
-      "is_own": false,
-      "rank": 33,
-      "visibility_pct": 1.7,
-      "sov_pct": 0.3,
-      "mentions": 2,
-      "sentiment": {
-        "positive": 2,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.07,
-      "aei_band": "Weak"
-    },
-    {
-      "brand_id": 32,
-      "name": "CIMB Vietnam",
-      "is_own": false,
-      "rank": 36,
-      "visibility_pct": 0.8,
-      "sov_pct": 0.1,
-      "mentions": 1,
-      "sentiment": {
-        "positive": 1,
-        "neutral": 0,
-        "negative": 0
-      },
-      "positive_pct": null,
-      "sentiment_reliable": false,
-      "has_llms_txt": false,
-      "aei": 0.03,
+      "aei": 0.11,
       "aei_band": "Weak"
     },
     {
       "brand_id": 33,
       "name": "Woori Bank Vietnam",
       "is_own": false,
-      "rank": 36,
-      "visibility_pct": 0.8,
-      "sov_pct": 0.1,
-      "mentions": 1,
+      "rank": 31,
+      "visibility_pct": 2.5,
+      "sov_pct": 0.3,
+      "mentions": 3,
       "sentiment": {
-        "positive": 1,
+        "positive": 3,
         "neutral": 0,
         "negative": 0
       },
       "positive_pct": null,
       "sentiment_reliable": false,
       "has_llms_txt": false,
-      "aei": 0.03,
+      "aei": 0.09,
       "aei_band": "Weak"
     },
     {
       "brand_id": 28,
       "name": "KienlongBank",
       "is_own": false,
-      "rank": 36,
-      "visibility_pct": 0.8,
-      "sov_pct": 0.1,
-      "mentions": 1,
+      "rank": 32,
+      "visibility_pct": 1.7,
+      "sov_pct": 0.2,
+      "mentions": 2,
       "sentiment": {
-        "positive": 1,
+        "positive": 2,
         "neutral": 0,
         "negative": 0
       },
       "positive_pct": null,
       "sentiment_reliable": false,
       "has_llms_txt": false,
-      "aei": 0.03,
+      "aei": 0.05,
       "aei_band": "Weak"
     },
     {
-      "brand_id": 41,
-      "name": "Vikki Bank",
+      "brand_id": 29,
+      "name": "Vietbank",
       "is_own": false,
-      "rank": 36,
-      "visibility_pct": 0.8,
-      "sov_pct": 0.1,
-      "mentions": 1,
+      "rank": 32,
+      "visibility_pct": 1.7,
+      "sov_pct": 0.2,
+      "mentions": 2,
       "sentiment": {
-        "positive": 1,
+        "positive": 2,
         "neutral": 0,
         "negative": 0
       },
       "positive_pct": null,
       "sentiment_reliable": false,
       "has_llms_txt": false,
-      "aei": 0.03,
+      "aei": 0.05,
       "aei_band": "Weak"
     },
     {
-      "brand_id": 23,
-      "name": "PGBank",
+      "brand_id": 37,
+      "name": "OceanBank",
       "is_own": false,
-      "rank": 40,
-      "visibility_pct": 0.0,
-      "sov_pct": 0.0,
-      "mentions": 0,
+      "rank": 32,
+      "visibility_pct": 1.7,
+      "sov_pct": 0.2,
+      "mentions": 2,
       "sentiment": {
-        "positive": 0,
+        "positive": 1,
         "neutral": 0,
-        "negative": 0
+        "negative": 1
       },
       "positive_pct": null,
       "sentiment_reliable": false,
       "has_llms_txt": false,
-      "aei": 0.0,
+      "aei": 0.06,
       "aei_band": "Weak"
     },
     {
       "brand_id": 26,
       "name": "VietABank",
       "is_own": false,
+      "rank": 35,
+      "visibility_pct": 0.8,
+      "sov_pct": 0.1,
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.02,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 23,
+      "name": "PGBank",
+      "is_own": false,
+      "rank": 35,
+      "visibility_pct": 0.8,
+      "sov_pct": 0.1,
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.02,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 20,
+      "name": "ABBank",
+      "is_own": false,
+      "rank": 35,
+      "visibility_pct": 0.8,
+      "sov_pct": 0.1,
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.02,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 36,
+      "name": "Hong Leong Bank Vietnam",
+      "is_own": false,
+      "rank": 35,
+      "visibility_pct": 0.8,
+      "sov_pct": 0.1,
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.02,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 41,
+      "name": "Vikki Bank",
+      "is_own": false,
+      "rank": 35,
+      "visibility_pct": 0.8,
+      "sov_pct": 0.1,
+      "mentions": 1,
+      "sentiment": {
+        "positive": 0,
+        "neutral": 1,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": false,
+      "aei": 0.02,
+      "aei_band": "Weak"
+    },
+    {
+      "brand_id": 32,
+      "name": "CIMB Vietnam",
+      "is_own": false,
       "rank": 40,
       "visibility_pct": 0.0,
       "sov_pct": 0.0,
@@ -813,8 +794,8 @@
       "aei_band": "Weak"
     },
     {
-      "brand_id": 29,
-      "name": "Vietbank",
+      "brand_id": 38,
+      "name": "MBV",
       "is_own": false,
       "rank": 40,
       "visibility_pct": 0.0,
@@ -849,879 +830,903 @@
       "has_llms_txt": false,
       "aei": 0.0,
       "aei_band": "Weak"
+    },
+    {
+      "brand_id": 43,
+      "name": "Liobank",
+      "is_own": false,
+      "rank": 40,
+      "visibility_pct": 0.0,
+      "sov_pct": 0.0,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 0
+      },
+      "positive_pct": null,
+      "sentiment_reliable": false,
+      "has_llms_txt": true,
+      "aei": 0.0,
+      "aei_band": "Weak"
     }
   ],
   "visibility_by_brand_model": [
     {
       "brand": "Techcombank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 60.0
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 93.3
     },
     {
       "brand": "Techcombank",
-      "model": "GPT-5.5",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 86.7
     },
     {
       "brand": "Techcombank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 80.0
-    },
-    {
-      "brand": "Techcombank",
-      "model": "Opus 4.6",
-      "visibility_pct": 70.0
-    },
-    {
-      "brand": "VPBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 76.7
-    },
-    {
-      "brand": "VPBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 63.3
-    },
-    {
-      "brand": "VPBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 63.3
-    },
-    {
-      "brand": "VPBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 83.3
-    },
-    {
-      "brand": "Vietcombank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 26.7
-    },
-    {
-      "brand": "Vietcombank",
-      "model": "GPT-5.5",
-      "visibility_pct": 63.3
-    },
-    {
-      "brand": "Vietcombank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 50.0
-    },
-    {
-      "brand": "Vietcombank",
-      "model": "Opus 4.6",
-      "visibility_pct": 73.3
-    },
-    {
-      "brand": "TPBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 43.3
-    },
-    {
-      "brand": "TPBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 46.7
-    },
-    {
-      "brand": "TPBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 36.7
-    },
-    {
-      "brand": "TPBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 43.3
-    },
-    {
-      "brand": "VIB",
-      "model": "DeepSeek V4",
-      "visibility_pct": 16.7
-    },
-    {
-      "brand": "VIB",
-      "model": "GPT-5.5",
-      "visibility_pct": 53.3
-    },
-    {
-      "brand": "VIB",
-      "model": "Gemini 3.5",
-      "visibility_pct": 50.0
-    },
-    {
-      "brand": "VIB",
-      "model": "Opus 4.6",
-      "visibility_pct": 50.0
-    },
-    {
-      "brand": "BIDV",
-      "model": "DeepSeek V4",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "BIDV",
-      "model": "GPT-5.5",
-      "visibility_pct": 40.0
-    },
-    {
-      "brand": "BIDV",
-      "model": "Gemini 3.5",
-      "visibility_pct": 43.3
-    },
-    {
-      "brand": "BIDV",
-      "model": "Opus 4.6",
+      "model": "Luna 6",
       "visibility_pct": 60.0
     },
     {
-      "brand": "MB Bank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 23.3
+      "brand": "Techcombank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 100.0
     },
     {
-      "brand": "MB Bank",
-      "model": "GPT-5.5",
-      "visibility_pct": 30.0
+      "brand": "VPBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 83.3
     },
     {
-      "brand": "MB Bank",
-      "model": "Gemini 3.5",
+      "brand": "VPBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 66.7
+    },
+    {
+      "brand": "VPBank",
+      "model": "Luna 6",
       "visibility_pct": 43.3
     },
     {
+      "brand": "VPBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 93.3
+    },
+    {
+      "brand": "Vietcombank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 80.0
+    },
+    {
+      "brand": "Vietcombank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 76.7
+    },
+    {
+      "brand": "Vietcombank",
+      "model": "Luna 6",
+      "visibility_pct": 36.7
+    },
+    {
+      "brand": "Vietcombank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 90.0
+    },
+    {
       "brand": "MB Bank",
-      "model": "Opus 4.6",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 93.3
+    },
+    {
+      "brand": "MB Bank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 63.3
+    },
+    {
+      "brand": "MB Bank",
+      "model": "Luna 6",
+      "visibility_pct": 26.7
+    },
+    {
+      "brand": "MB Bank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 76.7
+    },
+    {
+      "brand": "BIDV",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 63.3
+    },
+    {
+      "brand": "BIDV",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 63.3
+    },
+    {
+      "brand": "BIDV",
+      "model": "Luna 6",
+      "visibility_pct": 46.7
+    },
+    {
+      "brand": "BIDV",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 70.0
+    },
+    {
+      "brand": "TPBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 93.3
+    },
+    {
+      "brand": "TPBank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 56.7
     },
     {
-      "brand": "Cake by VPBank",
-      "model": "DeepSeek V4",
+      "brand": "TPBank",
+      "model": "Luna 6",
+      "visibility_pct": 13.3
+    },
+    {
+      "brand": "TPBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 70.0
+    },
+    {
+      "brand": "VIB",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 73.3
+    },
+    {
+      "brand": "VIB",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 50.0
+    },
+    {
+      "brand": "VIB",
+      "model": "Luna 6",
       "visibility_pct": 6.7
     },
     {
-      "brand": "Cake by VPBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 26.7
+      "brand": "VIB",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 53.3
     },
     {
-      "brand": "Cake by VPBank",
-      "model": "Gemini 3.5",
+      "brand": "ACB",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 86.7
+    },
+    {
+      "brand": "ACB",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 36.7
+    },
+    {
+      "brand": "ACB",
+      "model": "Luna 6",
+      "visibility_pct": 16.7
+    },
+    {
+      "brand": "ACB",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 36.7
+    },
+    {
+      "brand": "VietinBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 63.3
+    },
+    {
+      "brand": "VietinBank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 43.3
     },
     {
-      "brand": "Cake by VPBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 40.0
-    },
-    {
-      "brand": "Agribank",
-      "model": "DeepSeek V4",
+      "brand": "VietinBank",
+      "model": "Luna 6",
       "visibility_pct": 10.0
     },
     {
-      "brand": "Agribank",
-      "model": "GPT-5.5",
-      "visibility_pct": 23.3
+      "brand": "VietinBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 56.7
     },
     {
       "brand": "Agribank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 23.3
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 60.0
     },
     {
       "brand": "Agribank",
-      "model": "Opus 4.6",
-      "visibility_pct": 46.7
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 33.3
     },
     {
-      "brand": "Timo",
-      "model": "DeepSeek V4",
+      "brand": "Agribank",
+      "model": "Luna 6",
       "visibility_pct": 20.0
     },
     {
-      "brand": "Timo",
-      "model": "GPT-5.5",
-      "visibility_pct": 16.7
+      "brand": "Agribank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 50.0
     },
     {
-      "brand": "Timo",
-      "model": "Gemini 3.5",
-      "visibility_pct": 40.0
+      "brand": "Cake by VPBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 53.3
     },
     {
-      "brand": "Timo",
-      "model": "Opus 4.6",
+      "brand": "Cake by VPBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 36.7
+    },
+    {
+      "brand": "Cake by VPBank",
+      "model": "Luna 6",
+      "visibility_pct": 10.0
+    },
+    {
+      "brand": "Cake by VPBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 36.7
+    },
+    {
+      "brand": "Sacombank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 60.0
+    },
+    {
+      "brand": "Sacombank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 10.0
+    },
+    {
+      "brand": "Sacombank",
+      "model": "Luna 6",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "Sacombank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 23.3
+    },
+    {
+      "brand": "HSBC Vietnam",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 33.3
+    },
+    {
+      "brand": "HSBC Vietnam",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 26.7
     },
     {
-      "brand": "VietinBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "VietinBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 20.0
-    },
-    {
-      "brand": "VietinBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 20.0
-    },
-    {
-      "brand": "VietinBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 46.7
-    },
-    {
-      "brand": "BVBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "BVBank",
-      "model": "GPT-5.5",
+      "brand": "HSBC Vietnam",
+      "model": "Luna 6",
       "visibility_pct": 16.7
     },
     {
-      "brand": "BVBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 43.3
+      "brand": "HSBC Vietnam",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 16.7
     },
     {
-      "brand": "BVBank",
-      "model": "Opus 4.6",
+      "brand": "Timo",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 36.7
+    },
+    {
+      "brand": "Timo",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 30.0
     },
     {
-      "brand": "ACB",
-      "model": "DeepSeek V4",
-      "visibility_pct": 16.7
+      "brand": "Timo",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
     },
     {
-      "brand": "ACB",
-      "model": "GPT-5.5",
+      "brand": "Timo",
+      "model": "Sonnet 5.5",
       "visibility_pct": 26.7
     },
     {
-      "brand": "ACB",
-      "model": "Gemini 3.5",
-      "visibility_pct": 20.0
+      "brand": "Shinhan Bank Vietnam",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 46.7
     },
     {
-      "brand": "ACB",
-      "model": "Opus 4.6",
-      "visibility_pct": 16.7
+      "brand": "Shinhan Bank Vietnam",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 30.0
     },
     {
-      "brand": "MSB",
-      "model": "DeepSeek V4",
-      "visibility_pct": 6.7
+      "brand": "Shinhan Bank Vietnam",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
     },
     {
-      "brand": "MSB",
-      "model": "GPT-5.5",
-      "visibility_pct": 20.0
-    },
-    {
-      "brand": "MSB",
-      "model": "Gemini 3.5",
-      "visibility_pct": 16.7
-    },
-    {
-      "brand": "MSB",
-      "model": "Opus 4.6",
-      "visibility_pct": 20.0
-    },
-    {
-      "brand": "HDBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "HDBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "HDBank",
-      "model": "Gemini 3.5",
+      "brand": "Shinhan Bank Vietnam",
+      "model": "Sonnet 5.5",
       "visibility_pct": 13.3
     },
     {
       "brand": "HDBank",
-      "model": "Opus 4.6",
+      "model": "DeepSeek V4.1",
       "visibility_pct": 20.0
     },
     {
-      "brand": "HSBC Vietnam",
-      "model": "DeepSeek V4",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "HSBC Vietnam",
-      "model": "GPT-5.5",
-      "visibility_pct": 13.3
-    },
-    {
-      "brand": "HSBC Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "HSBC Vietnam",
-      "model": "Opus 4.6",
+      "brand": "HDBank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 16.7
     },
     {
-      "brand": "Shinhan Bank Vietnam",
-      "model": "DeepSeek V4",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Shinhan Bank Vietnam",
-      "model": "GPT-5.5",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "Shinhan Bank Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "Shinhan Bank Vietnam",
-      "model": "Opus 4.6",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "OCB",
-      "model": "DeepSeek V4",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "OCB",
-      "model": "GPT-5.5",
+      "brand": "HDBank",
+      "model": "Luna 6",
       "visibility_pct": 0.0
     },
     {
-      "brand": "OCB",
-      "model": "Gemini 3.5",
+      "brand": "HDBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 30.0
+    },
+    {
+      "brand": "BVBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 13.3
+    },
+    {
+      "brand": "BVBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 30.0
+    },
+    {
+      "brand": "BVBank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "BVBank",
+      "model": "Sonnet 5.5",
       "visibility_pct": 16.7
     },
     {
+      "brand": "MSB",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 20.0
+    },
+    {
+      "brand": "MSB",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 20.0
+    },
+    {
+      "brand": "MSB",
+      "model": "Luna 6",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "MSB",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 10.0
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 26.7
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 13.3
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "TNEX",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 33.3
+    },
+    {
+      "brand": "TNEX",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "TNEX",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "TNEX",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "UOB Vietnam",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 20.0
+    },
+    {
+      "brand": "UOB Vietnam",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "UOB Vietnam",
+      "model": "Luna 6",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "UOB Vietnam",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 10.0
+    },
+    {
+      "brand": "SHB",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 20.0
+    },
+    {
+      "brand": "SHB",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "SHB",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "SHB",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 16.7
+    },
+    {
+      "brand": "LPBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "LPBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "LPBank",
+      "model": "Luna 6",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "LPBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 13.3
+    },
+    {
       "brand": "OCB",
-      "model": "Opus 4.6",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 10.0
+    },
+    {
+      "brand": "OCB",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "OCB",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "OCB",
+      "model": "Sonnet 5.5",
       "visibility_pct": 13.3
     },
     {
-      "brand": "TNEX",
-      "model": "DeepSeek V4",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "TNEX",
-      "model": "GPT-5.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "TNEX",
-      "model": "Gemini 3.5",
+      "brand": "NCB",
+      "model": "DeepSeek V4.1",
       "visibility_pct": 10.0
-    },
-    {
-      "brand": "TNEX",
-      "model": "Opus 4.6",
-      "visibility_pct": 13.3
-    },
-    {
-      "brand": "Sacombank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Sacombank",
-      "model": "GPT-5.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "Sacombank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "Sacombank",
-      "model": "Opus 4.6",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "SHB",
-      "model": "DeepSeek V4",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "SHB",
-      "model": "GPT-5.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "SHB",
-      "model": "Gemini 3.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "SHB",
-      "model": "Opus 4.6",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "UOB Vietnam",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "UOB Vietnam",
-      "model": "GPT-5.5",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "UOB Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "UOB Vietnam",
-      "model": "Opus 4.6",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Eximbank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Eximbank",
-      "model": "GPT-5.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Eximbank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Eximbank",
-      "model": "Opus 4.6",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "SeABank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "SeABank",
-      "model": "GPT-5.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "SeABank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "SeABank",
-      "model": "Opus 4.6",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "model": "GPT-5.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "model": "Opus 4.6",
-      "visibility_pct": 10.0
-    },
-    {
-      "brand": "Liobank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Liobank",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Liobank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 13.3
-    },
-    {
-      "brand": "Liobank",
-      "model": "Opus 4.6",
-      "visibility_pct": 3.3
     },
     {
       "brand": "NCB",
-      "model": "DeepSeek V4",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 6.7
     },
     {
       "brand": "NCB",
-      "model": "GPT-5.5",
+      "model": "Luna 6",
       "visibility_pct": 0.0
     },
     {
       "brand": "NCB",
-      "model": "Gemini 3.5",
+      "model": "Sonnet 5.5",
       "visibility_pct": 3.3
     },
     {
-      "brand": "NCB",
-      "model": "Opus 4.6",
+      "brand": "BAC A BANK",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "BAC A BANK",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "BAC A BANK",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "BAC A BANK",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "PVcomBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "PVcomBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "PVcomBank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "PVcomBank",
+      "model": "Sonnet 5.5",
       "visibility_pct": 3.3
     },
     {
       "brand": "Nam A Bank",
-      "model": "DeepSeek V4",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "Nam A Bank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "Nam A Bank",
+      "model": "Luna 6",
       "visibility_pct": 0.0
     },
     {
       "brand": "Nam A Bank",
-      "model": "GPT-5.5",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "Eximbank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "Eximbank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 3.3
     },
     {
-      "brand": "Nam A Bank",
-      "model": "Gemini 3.5",
+      "brand": "Eximbank",
+      "model": "Luna 6",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "Eximbank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "SeABank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "SeABank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "SeABank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "SeABank",
+      "model": "Sonnet 5.5",
       "visibility_pct": 10.0
     },
     {
-      "brand": "Nam A Bank",
-      "model": "Opus 4.6",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "PVcomBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "PVcomBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "PVcomBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "PVcomBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "LPBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "LPBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "LPBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "LPBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "Standard Chartered Vietnam",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Standard Chartered Vietnam",
-      "model": "GPT-5.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Standard Chartered Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "Standard Chartered Vietnam",
-      "model": "Opus 4.6",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "OceanBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "OceanBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "OceanBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "OceanBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "BAC A BANK",
-      "model": "DeepSeek V4",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "BAC A BANK",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "BAC A BANK",
-      "model": "Gemini 3.5",
-      "visibility_pct": 3.3
-    },
-    {
-      "brand": "BAC A BANK",
-      "model": "Opus 4.6",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "MBV",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "MBV",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "MBV",
-      "model": "Gemini 3.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "MBV",
-      "model": "Opus 4.6",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "ABBank",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "ABBank",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "ABBank",
-      "model": "Gemini 3.5",
-      "visibility_pct": 6.7
-    },
-    {
-      "brand": "ABBank",
-      "model": "Opus 4.6",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "model": "DeepSeek V4",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "model": "Opus 4.6",
-      "visibility_pct": 3.3
-    },
-    {
       "brand": "Woori Bank Vietnam",
-      "model": "DeepSeek V4",
+      "model": "DeepSeek V4.1",
       "visibility_pct": 0.0
     },
     {
       "brand": "Woori Bank Vietnam",
-      "model": "GPT-5.5",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "Woori Bank Vietnam",
+      "model": "Luna 6",
       "visibility_pct": 0.0
     },
     {
       "brand": "Woori Bank Vietnam",
-      "model": "Gemini 3.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Woori Bank Vietnam",
-      "model": "Opus 4.6",
+      "model": "Sonnet 5.5",
       "visibility_pct": 3.3
     },
     {
       "brand": "KienlongBank",
-      "model": "DeepSeek V4",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "KienlongBank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 0.0
     },
     {
       "brand": "KienlongBank",
-      "model": "GPT-5.5",
+      "model": "Luna 6",
       "visibility_pct": 0.0
     },
     {
       "brand": "KienlongBank",
-      "model": "Gemini 3.5",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vietbank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 6.7
+    },
+    {
+      "brand": "Vietbank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vietbank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vietbank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "OceanBank",
+      "model": "DeepSeek V4.1",
       "visibility_pct": 3.3
     },
     {
-      "brand": "KienlongBank",
-      "model": "Opus 4.6",
+      "brand": "OceanBank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 0.0
     },
     {
-      "brand": "Vikki Bank",
-      "model": "DeepSeek V4",
+      "brand": "OceanBank",
+      "model": "Luna 6",
       "visibility_pct": 0.0
     },
     {
-      "brand": "Vikki Bank",
-      "model": "GPT-5.5",
-      "visibility_pct": 0.0
-    },
-    {
-      "brand": "Vikki Bank",
-      "model": "Gemini 3.5",
+      "brand": "OceanBank",
+      "model": "Sonnet 5.5",
       "visibility_pct": 3.3
     },
     {
-      "brand": "Vikki Bank",
-      "model": "Opus 4.6",
+      "brand": "VietABank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "VietABank",
+      "model": "Gemini 4 Argon",
       "visibility_pct": 0.0
+    },
+    {
+      "brand": "VietABank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "VietABank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "PGBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "PGBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "PGBank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "PGBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "ABBank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "ABBank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "ABBank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "ABBank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 3.3
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vikki Bank",
+      "model": "DeepSeek V4.1",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vikki Bank",
+      "model": "Gemini 4 Argon",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vikki Bank",
+      "model": "Luna 6",
+      "visibility_pct": 0.0
+    },
+    {
+      "brand": "Vikki Bank",
+      "model": "Sonnet 5.5",
+      "visibility_pct": 3.3
     }
   ],
   "share_of_voice": [
     {
       "brand": "Techcombank",
-      "sov_pct": 11.7,
+      "sov_pct": 10.0,
       "is_own": false
     },
     {
       "brand": "VPBank",
-      "sov_pct": 11.3,
-      "is_own": false
-    },
-    {
-      "brand": "Vietcombank",
       "sov_pct": 8.4,
       "is_own": false
     },
     {
-      "brand": "TPBank",
-      "sov_pct": 6.7,
-      "is_own": false
-    },
-    {
-      "brand": "VIB",
-      "sov_pct": 6.7,
-      "is_own": false
-    },
-    {
-      "brand": "BIDV",
-      "sov_pct": 6.1,
+      "brand": "Vietcombank",
+      "sov_pct": 8.3,
       "is_own": false
     },
     {
       "brand": "MB Bank",
-      "sov_pct": 6.1,
+      "sov_pct": 7.6,
       "is_own": false
     },
     {
-      "brand": "Cake by VPBank",
-      "sov_pct": 4.6,
-      "is_own": true
-    },
-    {
-      "brand": "Agribank",
-      "sov_pct": 4.1,
+      "brand": "BIDV",
+      "sov_pct": 7.1,
       "is_own": false
     },
     {
-      "brand": "Timo",
-      "sov_pct": 4.1,
+      "brand": "TPBank",
+      "sov_pct": 6.8,
       "is_own": false
     },
     {
-      "brand": "VietinBank",
-      "sov_pct": 3.7,
-      "is_own": false
-    },
-    {
-      "brand": "BVBank",
-      "sov_pct": 3.6,
+      "brand": "VIB",
+      "sov_pct": 5.4,
       "is_own": false
     },
     {
       "brand": "ACB",
-      "sov_pct": 3.2,
+      "sov_pct": 5.2,
       "is_own": false
     },
     {
-      "brand": "MSB",
-      "sov_pct": 2.5,
+      "brand": "VietinBank",
+      "sov_pct": 5.1,
       "is_own": false
     },
     {
-      "brand": "HDBank",
-      "sov_pct": 1.8,
+      "brand": "Agribank",
+      "sov_pct": 4.8,
+      "is_own": false
+    },
+    {
+      "brand": "Cake by VPBank",
+      "sov_pct": 4.0,
+      "is_own": true
+    },
+    {
+      "brand": "Sacombank",
+      "sov_pct": 2.8,
       "is_own": false
     },
     {
       "brand": "HSBC Vietnam",
-      "sov_pct": 1.8,
+      "sov_pct": 2.7,
+      "is_own": false
+    },
+    {
+      "brand": "Timo",
+      "sov_pct": 2.7,
       "is_own": false
     },
     {
       "brand": "Shinhan Bank Vietnam",
-      "sov_pct": 1.3,
+      "sov_pct": 2.6,
       "is_own": false
     },
     {
-      "brand": "OCB",
-      "sov_pct": 1.3,
+      "brand": "HDBank",
+      "sov_pct": 2.0,
+      "is_own": false
+    },
+    {
+      "brand": "BVBank",
+      "sov_pct": 1.8,
+      "is_own": false
+    },
+    {
+      "brand": "MSB",
+      "sov_pct": 1.7,
+      "is_own": false
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "sov_pct": 1.4,
       "is_own": false
     },
     {
@@ -1730,42 +1735,37 @@
       "is_own": false
     },
     {
-      "brand": "Sacombank",
-      "sov_pct": 0.9,
+      "brand": "UOB Vietnam",
+      "sov_pct": 1.2,
       "is_own": false
     },
     {
       "brand": "SHB",
+      "sov_pct": 1.1,
+      "is_own": false
+    },
+    {
+      "brand": "LPBank",
       "sov_pct": 0.9,
       "is_own": false
     },
     {
-      "brand": "UOB Vietnam",
+      "brand": "OCB",
       "sov_pct": 0.8,
-      "is_own": false
-    },
-    {
-      "brand": "Eximbank",
-      "sov_pct": 0.8,
-      "is_own": false
-    },
-    {
-      "brand": "SeABank",
-      "sov_pct": 0.7,
-      "is_own": false
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "sov_pct": 0.7,
-      "is_own": false
-    },
-    {
-      "brand": "Liobank",
-      "sov_pct": 0.7,
       "is_own": false
     },
     {
       "brand": "NCB",
+      "sov_pct": 0.6,
+      "is_own": false
+    },
+    {
+      "brand": "BAC A BANK",
+      "sov_pct": 0.6,
+      "is_own": false
+    },
+    {
+      "brand": "PVcomBank",
       "sov_pct": 0.5,
       "is_own": false
     },
@@ -1775,52 +1775,52 @@
       "is_own": false
     },
     {
-      "brand": "PVcomBank",
+      "brand": "Eximbank",
       "sov_pct": 0.5,
       "is_own": false
     },
     {
-      "brand": "LPBank",
-      "sov_pct": 0.5,
-      "is_own": false
-    },
-    {
-      "brand": "Standard Chartered Vietnam",
+      "brand": "SeABank",
       "sov_pct": 0.4,
-      "is_own": false
-    },
-    {
-      "brand": "OceanBank",
-      "sov_pct": 0.4,
-      "is_own": false
-    },
-    {
-      "brand": "BAC A BANK",
-      "sov_pct": 0.3,
-      "is_own": false
-    },
-    {
-      "brand": "MBV",
-      "sov_pct": 0.3,
-      "is_own": false
-    },
-    {
-      "brand": "ABBank",
-      "sov_pct": 0.3,
-      "is_own": false
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "sov_pct": 0.1,
       "is_own": false
     },
     {
       "brand": "Woori Bank Vietnam",
-      "sov_pct": 0.1,
+      "sov_pct": 0.3,
       "is_own": false
     },
     {
       "brand": "KienlongBank",
+      "sov_pct": 0.2,
+      "is_own": false
+    },
+    {
+      "brand": "Vietbank",
+      "sov_pct": 0.2,
+      "is_own": false
+    },
+    {
+      "brand": "OceanBank",
+      "sov_pct": 0.2,
+      "is_own": false
+    },
+    {
+      "brand": "VietABank",
+      "sov_pct": 0.1,
+      "is_own": false
+    },
+    {
+      "brand": "PGBank",
+      "sov_pct": 0.1,
+      "is_own": false
+    },
+    {
+      "brand": "ABBank",
+      "sov_pct": 0.1,
+      "is_own": false
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
       "sov_pct": 0.1,
       "is_own": false
     },
@@ -1834,95 +1834,122 @@
     {
       "brand": "Techcombank",
       "is_own": false,
-      "mentions": 89,
-      "positive": 84,
-      "neutral": 5,
+      "mentions": 102,
+      "positive": 89,
+      "neutral": 13,
       "negative": 0,
-      "positive_pct": 94.4
+      "positive_pct": 87.3
     },
     {
       "brand": "VPBank",
       "is_own": false,
       "mentions": 86,
-      "positive": 72,
-      "neutral": 14,
-      "negative": 0,
-      "positive_pct": 83.7
+      "positive": 70,
+      "neutral": 15,
+      "negative": 1,
+      "positive_pct": 81.4
     },
     {
       "brand": "Vietcombank",
       "is_own": false,
-      "mentions": 64,
+      "mentions": 85,
       "positive": 61,
-      "neutral": 3,
-      "negative": 0,
-      "positive_pct": 95.3
-    },
-    {
-      "brand": "TPBank",
-      "is_own": false,
-      "mentions": 51,
-      "positive": 48,
-      "neutral": 3,
-      "negative": 0,
-      "positive_pct": 94.1
-    },
-    {
-      "brand": "VIB",
-      "is_own": false,
-      "mentions": 51,
-      "positive": 29,
       "neutral": 22,
-      "negative": 0,
-      "positive_pct": 56.9
-    },
-    {
-      "brand": "BIDV",
-      "is_own": false,
-      "mentions": 46,
-      "positive": 43,
-      "neutral": 3,
-      "negative": 0,
-      "positive_pct": 93.5
+      "negative": 2,
+      "positive_pct": 71.8
     },
     {
       "brand": "MB Bank",
       "is_own": false,
-      "mentions": 46,
-      "positive": 43,
-      "neutral": 3,
+      "mentions": 78,
+      "positive": 70,
+      "neutral": 8,
       "negative": 0,
-      "positive_pct": 93.5
+      "positive_pct": 89.7
     },
     {
-      "brand": "Cake by VPBank",
-      "is_own": true,
-      "mentions": 35,
-      "positive": 33,
-      "neutral": 2,
+      "brand": "BIDV",
+      "is_own": false,
+      "mentions": 73,
+      "positive": 55,
+      "neutral": 17,
+      "negative": 1,
+      "positive_pct": 75.3
+    },
+    {
+      "brand": "TPBank",
+      "is_own": false,
+      "mentions": 70,
+      "positive": 61,
+      "neutral": 9,
       "negative": 0,
-      "positive_pct": 94.3
+      "positive_pct": 87.1
+    },
+    {
+      "brand": "VIB",
+      "is_own": false,
+      "mentions": 55,
+      "positive": 33,
+      "neutral": 21,
+      "negative": 1,
+      "positive_pct": 60.0
+    },
+    {
+      "brand": "ACB",
+      "is_own": false,
+      "mentions": 53,
+      "positive": 44,
+      "neutral": 9,
+      "negative": 0,
+      "positive_pct": 83.0
+    },
+    {
+      "brand": "VietinBank",
+      "is_own": false,
+      "mentions": 52,
+      "positive": 35,
+      "neutral": 16,
+      "negative": 1,
+      "positive_pct": 67.3
     },
     {
       "brand": "Agribank",
       "is_own": false,
-      "mentions": 31,
-      "positive": 28,
-      "neutral": 3,
+      "mentions": 49,
+      "positive": 34,
+      "neutral": 14,
+      "negative": 1,
+      "positive_pct": 69.4
+    },
+    {
+      "brand": "Cake by VPBank",
+      "is_own": true,
+      "mentions": 41,
+      "positive": 34,
+      "neutral": 7,
       "negative": 0,
-      "positive_pct": 90.3
+      "positive_pct": 82.9
+    },
+    {
+      "brand": "Sacombank",
+      "is_own": false,
+      "mentions": 29,
+      "positive": 20,
+      "neutral": 8,
+      "negative": 1,
+      "positive_pct": 69.0
+    },
+    {
+      "brand": "HSBC Vietnam",
+      "is_own": false,
+      "mentions": 28,
+      "positive": 22,
+      "neutral": 6,
+      "negative": 0,
+      "positive_pct": 78.6
     },
     {
       "brand": "Timo",
-      "is_own": false,
-      "mentions": 31,
-      "positive": 31,
-      "neutral": 0,
-      "negative": 0,
-      "positive_pct": 100.0
-    },
-    {
-      "brand": "VietinBank",
       "is_own": false,
       "mentions": 28,
       "positive": 25,
@@ -1931,163 +1958,193 @@
       "positive_pct": 89.3
     },
     {
-      "brand": "BVBank",
+      "brand": "Shinhan Bank Vietnam",
       "is_own": false,
       "mentions": 27,
-      "positive": 18,
-      "neutral": 9,
+      "positive": 20,
+      "neutral": 7,
       "negative": 0,
-      "positive_pct": 66.7
-    },
-    {
-      "brand": "ACB",
-      "is_own": false,
-      "mentions": 24,
-      "positive": 24,
-      "neutral": 0,
-      "negative": 0,
-      "positive_pct": 100.0
-    },
-    {
-      "brand": "MSB",
-      "is_own": false,
-      "mentions": 19,
-      "positive": 14,
-      "neutral": 5,
-      "negative": 0,
-      "positive_pct": 73.7
+      "positive_pct": 74.1
     },
     {
       "brand": "HDBank",
       "is_own": false,
-      "mentions": 14,
-      "positive": 12,
-      "neutral": 2,
+      "mentions": 20,
+      "positive": 13,
+      "neutral": 7,
       "negative": 0,
-      "positive_pct": 85.7
+      "positive_pct": 65.0
     },
     {
-      "brand": "HSBC Vietnam",
+      "brand": "BVBank",
+      "is_own": false,
+      "mentions": 18,
+      "positive": 10,
+      "neutral": 8,
+      "negative": 0,
+      "positive_pct": 55.6
+    },
+    {
+      "brand": "MSB",
+      "is_own": false,
+      "mentions": 17,
+      "positive": 6,
+      "neutral": 11,
+      "negative": 0,
+      "positive_pct": 35.3
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
       "is_own": false,
       "mentions": 14,
-      "positive": 14,
+      "positive": 13,
+      "neutral": 1,
+      "negative": 0,
+      "positive_pct": 92.9
+    },
+    {
+      "brand": "TNEX",
+      "is_own": false,
+      "mentions": 12,
+      "positive": 9,
+      "neutral": 3,
+      "negative": 0,
+      "positive_pct": 75.0
+    },
+    {
+      "brand": "UOB Vietnam",
+      "is_own": false,
+      "mentions": 12,
+      "positive": 12,
       "neutral": 0,
       "negative": 0,
       "positive_pct": 100.0
     },
     {
-      "brand": "Shinhan Bank Vietnam",
+      "brand": "SHB",
       "is_own": false,
-      "mentions": 10,
-      "positive": 7,
+      "mentions": 11,
+      "positive": 8,
       "neutral": 3,
       "negative": 0,
-      "positive_pct": 70.0
-    },
-    {
-      "brand": "OCB",
-      "is_own": false,
-      "mentions": 10,
-      "positive": 9,
-      "neutral": 1,
-      "negative": 0,
-      "positive_pct": 90.0
+      "positive_pct": 72.7
     }
   ],
   "sentiment_by_model": [
     {
-      "model": "DeepSeek V4",
-      "positive_pct": 91.0,
-      "neutral_pct": 9.0,
+      "model": "DeepSeek V4.1",
+      "positive_pct": 82.7,
+      "neutral_pct": 16.5,
+      "negative_pct": 0.8
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "positive_pct": 84.0,
+      "neutral_pct": 14.1,
+      "negative_pct": 2.0
+    },
+    {
+      "model": "Luna 6",
+      "positive_pct": 70.7,
+      "neutral_pct": 29.3,
       "negative_pct": 0.0
     },
     {
-      "model": "GPT-5.5",
-      "positive_pct": 83.1,
-      "neutral_pct": 16.9,
-      "negative_pct": 0.0
-    },
-    {
-      "model": "Gemini 3.5",
-      "positive_pct": 87.0,
-      "neutral_pct": 13.0,
-      "negative_pct": 0.0
-    },
-    {
-      "model": "Opus 4.6",
-      "positive_pct": 89.9,
-      "neutral_pct": 10.1,
-      "negative_pct": 0.0
+      "model": "Sonnet 5.5",
+      "positive_pct": 65.4,
+      "neutral_pct": 34.2,
+      "negative_pct": 0.3
     }
   ],
   "source_mix": [
     {
       "type": "Competitor",
-      "citations": 387,
-      "pct": 76.0,
+      "citations": 661,
+      "pct": 74.8,
       "domains": 31
     },
     {
       "type": "Other",
-      "citations": 61,
-      "pct": 12.0,
-      "domains": 32
+      "citations": 130,
+      "pct": 14.7,
+      "domains": 73
     },
     {
       "type": "Own domain",
-      "citations": 26,
-      "pct": 5.1,
+      "citations": 35,
+      "pct": 4.0,
       "domains": 1
     },
     {
-      "type": "News / Media",
-      "citations": 18,
-      "pct": 3.5,
-      "domains": 5
+      "type": "Government",
+      "citations": 30,
+      "pct": 3.4,
+      "domains": 9
     },
     {
-      "type": "Government",
-      "citations": 13,
-      "pct": 2.6,
-      "domains": 6
+      "type": "News / Media",
+      "citations": 26,
+      "pct": 2.9,
+      "domains": 12
     },
     {
       "type": "Directory / Review",
-      "citations": 4,
-      "pct": 0.8,
-      "domains": 2
+      "citations": 1,
+      "pct": 0.1,
+      "domains": 1
+    },
+    {
+      "type": "Social",
+      "citations": 1,
+      "pct": 0.1,
+      "domains": 1
     }
   ],
   "domain_ranking": [
     {
       "domain": "techcombank.com",
-      "citations": 71,
+      "citations": 107,
       "type": "Competitor"
     },
     {
       "domain": "vpbank.com.vn",
-      "citations": 53,
+      "citations": 64,
       "type": "Competitor"
     },
     {
-      "domain": "vietcombank.com.vn",
-      "citations": 38,
+      "domain": "mbbank.com.vn",
+      "citations": 61,
       "type": "Competitor"
     },
     {
       "domain": "tpb.vn",
-      "citations": 38,
+      "citations": 59,
       "type": "Competitor"
     },
     {
-      "domain": "timo.vn",
-      "citations": 32,
+      "domain": "vietcombank.com.vn",
+      "citations": 57,
+      "type": "Competitor"
+    },
+    {
+      "domain": "bidv.com.vn",
+      "citations": 50,
+      "type": "Competitor"
+    },
+    {
+      "domain": "acb.com.vn",
+      "citations": 44,
       "type": "Competitor"
     },
     {
       "domain": "cake.vn",
-      "citations": 26,
+      "citations": 35,
       "type": "Own domain"
+    },
+    {
+      "domain": "hsbc.com.vn",
+      "citations": 28,
+      "type": "Competitor"
     },
     {
       "domain": "vib.com.vn",
@@ -2095,87 +2152,72 @@
       "type": "Competitor"
     },
     {
-      "domain": "mbbank.com.vn",
-      "citations": 19,
+      "domain": "vietinbank.vn",
+      "citations": 23,
       "type": "Competitor"
     },
     {
-      "domain": "bidv.com.vn",
-      "citations": 17,
-      "type": "Competitor"
-    },
-    {
-      "domain": "acb.com.vn",
-      "citations": 11,
-      "type": "Competitor"
-    },
-    {
-      "domain": "hsbc.com.vn",
-      "citations": 11,
+      "domain": "timo.vn",
+      "citations": 22,
       "type": "Competitor"
     },
     {
       "domain": "agribank.com.vn",
+      "citations": 21,
+      "type": "Competitor"
+    },
+    {
+      "domain": "shinhan.com.vn",
+      "citations": 17,
+      "type": "Competitor"
+    },
+    {
+      "domain": "sacombank.com.vn",
+      "citations": 14,
+      "type": "Competitor"
+    },
+    {
+      "domain": "uob.com.vn",
       "citations": 10,
       "type": "Competitor"
     },
     {
-      "domain": "msb.com.vn",
+      "domain": "sbv.gov.vn",
+      "citations": 10,
+      "type": "Government"
+    },
+    {
+      "domain": "homecredit.vn",
+      "citations": 9,
+      "type": "Other"
+    },
+    {
+      "domain": "tnex.com.vn",
       "citations": 9,
       "type": "Competitor"
     },
     {
-      "domain": "homecredit.vn",
-      "citations": 7,
-      "type": "Other"
-    },
-    {
-      "domain": "cafef.vn",
-      "citations": 7,
-      "type": "News / Media"
-    },
-    {
-      "domain": "tnex.com.vn",
-      "citations": 7,
-      "type": "Competitor"
-    },
-    {
-      "domain": "decisionlab.co",
-      "citations": 7,
-      "type": "Other"
-    },
-    {
-      "domain": "shinhan.com.vn",
-      "citations": 7,
-      "type": "Competitor"
-    },
-    {
-      "domain": "div.gov.vn",
-      "citations": 6,
-      "type": "Government"
-    },
-    {
       "domain": "fecredit.com.vn",
-      "citations": 5,
+      "citations": 9,
       "type": "Other"
     }
   ],
   "citation_coverage": [
     {
-      "model": "DeepSeek V4",
+      "model": "DeepSeek V4.1",
       "web_pct": 100.0
     },
     {
-      "model": "GPT-5.5",
+      "model": "Gemini 4 Argon",
       "web_pct": 100.0
     },
     {
-      "model": "Gemini 3.5",
+      "model": "Luna 6",
       "web_pct": 100.0
     },
     {
-      "model": "Opus 4.6",
-      "web_pct": 83.3
+      "model": "Sonnet 5.5",
+      "web_pct": 96.7
     }
   ],
   "prompt_visibility": [
@@ -2187,8 +2229,8 @@
       "prompt": "Tôi có một khoản tiền nhàn rỗi và muốn chọn ngân hàng có sản phẩm tiết kiệm phù hợp nhất với nhu cầu của mình ở Việt Nam, nên chọn ngân hàng nào?",
       "own_present": true,
       "own_mentions": 3,
-      "competitors_count": 22,
-      "top_competitor": "Agribank"
+      "competitors_count": 24,
+      "top_competitor": "MB Bank"
     },
     {
       "prompt_id": 2,
@@ -2199,7 +2241,7 @@
       "own_present": true,
       "own_mentions": 2,
       "competitors_count": 14,
-      "top_competitor": "Vietcombank"
+      "top_competitor": "BIDV"
     },
     {
       "prompt_id": 3,
@@ -2209,8 +2251,8 @@
       "prompt": "Tôi sợ phí ẩn khi dùng thẻ tín dụng; ngân hàng nào ở Việt Nam minh bạch, rõ ràng về lãi suất và phí thẻ nhất?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 12,
-      "top_competitor": "Techcombank"
+      "competitors_count": 11,
+      "top_competitor": "HSBC Vietnam"
     },
     {
       "prompt_id": 4,
@@ -2219,9 +2261,9 @@
       "product": "loan",
       "prompt": "Ngân hàng nào ở Việt Nam công khai lãi suất và phí vay rõ ràng, không phát sinh chi phí bất ngờ?",
       "own_present": true,
-      "own_mentions": 2,
-      "competitors_count": 17,
-      "top_competitor": "Timo"
+      "own_mentions": 1,
+      "competitors_count": 15,
+      "top_competitor": "BIDV"
     },
     {
       "prompt_id": 5,
@@ -2229,10 +2271,10 @@
       "attribute": "Has easy and convenient repayment",
       "product": "loan",
       "prompt": "Tôi muốn vay tiêu dùng với cách trả nợ linh hoạt và nhẹ nhàng hằng tháng, nên chọn ngân hàng nào ở Việt Nam?",
-      "own_present": false,
-      "own_mentions": 0,
-      "competitors_count": 10,
-      "top_competitor": "Techcombank"
+      "own_present": true,
+      "own_mentions": 1,
+      "competitors_count": 15,
+      "top_competitor": "TPBank"
     },
     {
       "prompt_id": 6,
@@ -2243,7 +2285,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 10,
-      "top_competitor": "Techcombank"
+      "top_competitor": "MB Bank"
     },
     {
       "prompt_id": 7,
@@ -2253,7 +2295,7 @@
       "prompt": "Ngân hàng nào ở Việt Nam có dịch vụ chăm sóc và hỗ trợ khách hàng tốt nhất?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 11,
+      "competitors_count": 14,
       "top_competitor": "Techcombank"
     },
     {
@@ -2263,8 +2305,8 @@
       "product": "loan",
       "prompt": "Khi vay vốn, ngân hàng nào ở Việt Nam giải ngân nhanh và thủ tục nhận tiền đơn giản nhất?",
       "own_present": true,
-      "own_mentions": 3,
-      "competitors_count": 14,
+      "own_mentions": 1,
+      "competitors_count": 12,
       "top_competitor": "VPBank"
     },
     {
@@ -2275,8 +2317,8 @@
       "prompt": "Tôi là chủ doanh nghiệp nhỏ cần dịch vụ ngân hàng phù hợp với nhu cầu kinh doanh, nên chọn ngân hàng nào ở Việt Nam?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 14,
-      "top_competitor": "VPBank"
+      "competitors_count": 16,
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 10,
@@ -2286,8 +2328,8 @@
       "prompt": "Tôi lo lắng về an toàn tiền gửi; ngân hàng nào ở Việt Nam an toàn và đáng tin cậy nhất?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 10,
-      "top_competitor": "VietinBank"
+      "competitors_count": 17,
+      "top_competitor": "Agribank"
     },
     {
       "prompt_id": 11,
@@ -2297,7 +2339,7 @@
       "prompt": "Sử dụng ngân hàng nào ở Việt Nam mang lại cho khách hàng cảm giác hài lòng và tự hào nhất?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 10,
+      "competitors_count": 13,
       "top_competitor": "Techcombank"
     },
     {
@@ -2309,7 +2351,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 15,
-      "top_competitor": "Techcombank"
+      "top_competitor": "TPBank"
     },
     {
       "prompt_id": 13,
@@ -2318,9 +2360,9 @@
       "product": "loan",
       "prompt": "Tôi cần vay tiền gấp với thủ tục đăng ký nhanh và đơn giản, nên chọn ngân hàng nào ở Việt Nam?",
       "own_present": true,
-      "own_mentions": 2,
-      "competitors_count": 8,
-      "top_competitor": "VPBank"
+      "own_mentions": 3,
+      "competitors_count": 12,
+      "top_competitor": "MB Bank"
     },
     {
       "prompt_id": 14,
@@ -2329,9 +2371,9 @@
       "product": "account",
       "prompt": "Ngân hàng nào ở Việt Nam cho phép mở tài khoản và đăng ký dịch vụ nhanh và dễ nhất?",
       "own_present": true,
-      "own_mentions": 1,
-      "competitors_count": 12,
-      "top_competitor": "Timo"
+      "own_mentions": 4,
+      "competitors_count": 18,
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 15,
@@ -2341,7 +2383,7 @@
       "prompt": "Tôi muốn quản lý tài chính qua ứng dụng dễ dùng và mượt mà, app ngân hàng nào ở Việt Nam có trải nghiệm tốt nhất?",
       "own_present": true,
       "own_mentions": 2,
-      "competitors_count": 8,
+      "competitors_count": 11,
       "top_competitor": "Techcombank"
     },
     {
@@ -2351,9 +2393,9 @@
       "product": "savings",
       "prompt": "Ngân hàng nào ở Việt Nam có lãi suất tiết kiệm và phí cạnh tranh nhất hiện nay?",
       "own_present": true,
-      "own_mentions": 3,
-      "competitors_count": 21,
-      "top_competitor": "MB Bank"
+      "own_mentions": 4,
+      "competitors_count": 28,
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 17,
@@ -2363,8 +2405,8 @@
       "prompt": "Ngân hàng nào ở Việt Nam có lãi suất vay cạnh tranh nhất cho khách hàng cá nhân?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 18,
-      "top_competitor": "Vietcombank"
+      "competitors_count": 22,
+      "top_competitor": "Agribank"
     },
     {
       "prompt_id": 18,
@@ -2375,7 +2417,7 @@
       "own_present": true,
       "own_mentions": 4,
       "competitors_count": 12,
-      "top_competitor": "TNEX"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 19,
@@ -2384,9 +2426,9 @@
       "product": "cards",
       "prompt": "Lịch sử tín dụng của tôi chưa hoàn hảo; ngân hàng nào ở Việt Nam có tỷ lệ duyệt thẻ tín dụng hoặc khoản vay cao?",
       "own_present": true,
-      "own_mentions": 2,
-      "competitors_count": 12,
-      "top_competitor": "TPBank"
+      "own_mentions": 1,
+      "competitors_count": 21,
+      "top_competitor": "HDBank"
     },
     {
       "prompt_id": 20,
@@ -2396,8 +2438,8 @@
       "prompt": "Người thu nhập trung bình muốn vay tiêu dùng dễ được duyệt nên chọn ngân hàng nào ở Việt Nam?",
       "own_present": true,
       "own_mentions": 1,
-      "competitors_count": 11,
-      "top_competitor": "TPBank"
+      "competitors_count": 13,
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 21,
@@ -2407,8 +2449,8 @@
       "prompt": "Ngân hàng nào ở Việt Nam mang lại trải nghiệm khách hàng cao cấp, khiến tôi cảm thấy được trân trọng?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 10,
-      "top_competitor": "Techcombank"
+      "competitors_count": 14,
+      "top_competitor": "HSBC Vietnam"
     },
     {
       "prompt_id": 22,
@@ -2418,7 +2460,7 @@
       "prompt": "Tôi muốn linh hoạt chọn kỳ hạn vay phù hợp khả năng trả nợ, ngân hàng nào ở Việt Nam có nhiều lựa chọn kỳ hạn vay?",
       "own_present": true,
       "own_mentions": 1,
-      "competitors_count": 13,
+      "competitors_count": 20,
       "top_competitor": "VPBank"
     },
     {
@@ -2429,7 +2471,7 @@
       "prompt": "Ngân hàng nào ở Việt Nam có nhiều kỳ hạn gửi tiết kiệm linh hoạt để lựa chọn?",
       "own_present": true,
       "own_mentions": 2,
-      "competitors_count": 14,
+      "competitors_count": 21,
       "top_competitor": "Techcombank"
     },
     {
@@ -2439,8 +2481,8 @@
       "product": "general",
       "prompt": "Tôi không rành về tài chính; ngân hàng nào ở Việt Nam có sản phẩm dễ hiểu và dễ tìm hiểu nhất?",
       "own_present": true,
-      "own_mentions": 1,
-      "competitors_count": 7,
+      "own_mentions": 2,
+      "competitors_count": 11,
       "top_competitor": "TPBank"
     },
     {
@@ -2451,7 +2493,7 @@
       "prompt": "Tôi thích giao dịch trực tiếp; ngân hàng nào ở Việt Nam có mạng lưới chi nhánh và điểm giao dịch thuận tiện nhất?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 11,
+      "competitors_count": 10,
       "top_competitor": "Agribank"
     },
     {
@@ -2462,8 +2504,8 @@
       "prompt": "Ngân hàng nào ở Việt Nam đang có nhiều ưu đãi và khuyến mãi hấp dẫn cho thẻ và dịch vụ?",
       "own_present": true,
       "own_mentions": 1,
-      "competitors_count": 13,
-      "top_competitor": "Techcombank"
+      "competitors_count": 17,
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 27,
@@ -2471,10 +2513,10 @@
       "attribute": "Offers enticing deals and promotions",
       "product": "general",
       "prompt": "Ngân hàng nào ở Việt Nam có chương trình hoàn tiền và quà tặng tốt nhất khi mở tài khoản hoặc thẻ?",
-      "own_present": false,
-      "own_mentions": 0,
-      "competitors_count": 10,
-      "top_competitor": "VIB"
+      "own_present": true,
+      "own_mentions": 2,
+      "competitors_count": 16,
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 28,
@@ -2483,8 +2525,8 @@
       "product": "general",
       "prompt": "Ngân hàng nào ở Việt Nam thực sự quan tâm và giúp cải thiện sức khỏe tài chính của khách hàng?",
       "own_present": true,
-      "own_mentions": 2,
-      "competitors_count": 11,
+      "own_mentions": 3,
+      "competitors_count": 14,
       "top_competitor": "Techcombank"
     },
     {
@@ -2495,8 +2537,8 @@
       "prompt": "Ngân hàng nào ở Việt Nam tích cực trong các hoạt động trách nhiệm xã hội và cộng đồng?",
       "own_present": false,
       "own_mentions": 0,
-      "competitors_count": 12,
-      "top_competitor": "SeABank"
+      "competitors_count": 18,
+      "top_competitor": "BIDV"
     },
     {
       "prompt_id": 30,
@@ -2507,7 +2549,7 @@
       "own_present": true,
       "own_mentions": 3,
       "competitors_count": 11,
-      "top_competitor": "Timo"
+      "top_competitor": "Techcombank"
     }
   ],
   "ai_readiness": [
@@ -2515,7 +2557,7 @@
       "brand": "Techcombank",
       "rank": 1,
       "is_own": false,
-      "visibility_pct": 74.2,
+      "visibility_pct": 85.0,
       "has_llms_txt": false,
       "url": null
     },
@@ -2531,207 +2573,191 @@
       "brand": "Vietcombank",
       "rank": 3,
       "is_own": false,
-      "visibility_pct": 53.3,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "TPBank",
-      "rank": 4,
-      "is_own": false,
-      "visibility_pct": 42.5,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "VIB",
-      "rank": 4,
-      "is_own": false,
-      "visibility_pct": 42.5,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "BIDV",
-      "rank": 6,
-      "is_own": false,
-      "visibility_pct": 38.3,
+      "visibility_pct": 70.8,
       "has_llms_txt": false,
       "url": null
     },
     {
       "brand": "MB Bank",
+      "rank": 4,
+      "is_own": false,
+      "visibility_pct": 65.0,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "BIDV",
+      "rank": 5,
+      "is_own": false,
+      "visibility_pct": 60.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "TPBank",
       "rank": 6,
       "is_own": false,
-      "visibility_pct": 38.3,
+      "visibility_pct": 58.3,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "Cake by VPBank",
+      "brand": "VIB",
+      "rank": 7,
+      "is_own": false,
+      "visibility_pct": 45.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "ACB",
       "rank": 8,
-      "is_own": true,
-      "visibility_pct": 29.2,
-      "has_llms_txt": true,
-      "url": "https://cake.vn/llms.txt"
-    },
-    {
-      "brand": "Agribank",
-      "rank": 9,
       "is_own": false,
-      "visibility_pct": 25.8,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "Timo",
-      "rank": 9,
-      "is_own": false,
-      "visibility_pct": 25.8,
+      "visibility_pct": 44.2,
       "has_llms_txt": false,
       "url": null
     },
     {
       "brand": "VietinBank",
+      "rank": 9,
+      "is_own": false,
+      "visibility_pct": 43.3,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "Agribank",
+      "rank": 10,
+      "is_own": false,
+      "visibility_pct": 40.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "Cake by VPBank",
       "rank": 11,
+      "is_own": true,
+      "visibility_pct": 34.2,
+      "has_llms_txt": true,
+      "url": "https://cake.vn/llms.txt"
+    },
+    {
+      "brand": "Sacombank",
+      "rank": 12,
+      "is_own": false,
+      "visibility_pct": 24.2,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "HSBC Vietnam",
+      "rank": 13,
       "is_own": false,
       "visibility_pct": 23.3,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "BVBank",
-      "rank": 12,
+      "brand": "Timo",
+      "rank": 13,
+      "is_own": false,
+      "visibility_pct": 23.3,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "Shinhan Bank Vietnam",
+      "rank": 15,
       "is_own": false,
       "visibility_pct": 22.5,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "ACB",
-      "rank": 13,
+      "brand": "HDBank",
+      "rank": 16,
       "is_own": false,
-      "visibility_pct": 20.0,
+      "visibility_pct": 16.7,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "BVBank",
+      "rank": 17,
+      "is_own": false,
+      "visibility_pct": 15.0,
       "has_llms_txt": false,
       "url": null
     },
     {
       "brand": "MSB",
-      "rank": 14,
+      "rank": 18,
       "is_own": false,
-      "visibility_pct": 15.8,
+      "visibility_pct": 14.2,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "HDBank",
-      "rank": 15,
+      "brand": "Standard Chartered Vietnam",
+      "rank": 19,
       "is_own": false,
       "visibility_pct": 11.7,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "HSBC Vietnam",
-      "rank": 15,
-      "is_own": false,
-      "visibility_pct": 11.7,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "Shinhan Bank Vietnam",
-      "rank": 17,
-      "is_own": false,
-      "visibility_pct": 8.3,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "OCB",
-      "rank": 17,
-      "is_own": false,
-      "visibility_pct": 8.3,
       "has_llms_txt": false,
       "url": null
     },
     {
       "brand": "TNEX",
-      "rank": 19,
+      "rank": 20,
+      "is_own": false,
+      "visibility_pct": 10.0,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "UOB Vietnam",
+      "rank": 20,
+      "is_own": false,
+      "visibility_pct": 10.0,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "SHB",
+      "rank": 22,
+      "is_own": false,
+      "visibility_pct": 9.2,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "LPBank",
+      "rank": 23,
       "is_own": false,
       "visibility_pct": 7.5,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "Sacombank",
-      "rank": 20,
-      "is_own": false,
-      "visibility_pct": 5.8,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "SHB",
-      "rank": 20,
-      "is_own": false,
-      "visibility_pct": 5.8,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "UOB Vietnam",
-      "rank": 22,
-      "is_own": false,
-      "visibility_pct": 5.0,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "Eximbank",
-      "rank": 22,
-      "is_own": false,
-      "visibility_pct": 5.0,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "SeABank",
+      "brand": "OCB",
       "rank": 24,
       "is_own": false,
-      "visibility_pct": 4.2,
+      "visibility_pct": 6.7,
       "has_llms_txt": false,
       "url": null
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "rank": 24,
-      "is_own": false,
-      "visibility_pct": 4.2,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "Liobank",
-      "rank": 24,
-      "is_own": false,
-      "visibility_pct": 4.2,
-      "has_llms_txt": true,
-      "url": "https://liobank.vn/llms.txt"
     },
     {
       "brand": "NCB",
-      "rank": 27,
+      "rank": 25,
       "is_own": false,
-      "visibility_pct": 3.3,
+      "visibility_pct": 5.0,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "Nam A Bank",
-      "rank": 27,
+      "brand": "BAC A BANK",
+      "rank": 25,
       "is_own": false,
-      "visibility_pct": 3.3,
+      "visibility_pct": 5.0,
       "has_llms_txt": false,
       "url": null
     },
@@ -2739,85 +2765,69 @@
       "brand": "PVcomBank",
       "rank": 27,
       "is_own": false,
-      "visibility_pct": 3.3,
+      "visibility_pct": 4.2,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "LPBank",
+      "brand": "Nam A Bank",
       "rank": 27,
       "is_own": false,
+      "visibility_pct": 4.2,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "Eximbank",
+      "rank": 27,
+      "is_own": false,
+      "visibility_pct": 4.2,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "SeABank",
+      "rank": 30,
+      "is_own": false,
       "visibility_pct": 3.3,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "Standard Chartered Vietnam",
-      "rank": 31,
-      "is_own": false,
-      "visibility_pct": 2.5,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "OceanBank",
-      "rank": 31,
-      "is_own": false,
-      "visibility_pct": 2.5,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "BAC A BANK",
-      "rank": 33,
-      "is_own": false,
-      "visibility_pct": 1.7,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "MBV",
-      "rank": 33,
-      "is_own": false,
-      "visibility_pct": 1.7,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "ABBank",
-      "rank": 33,
-      "is_own": false,
-      "visibility_pct": 1.7,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "rank": 36,
-      "is_own": false,
-      "visibility_pct": 0.8,
       "has_llms_txt": false,
       "url": null
     },
     {
       "brand": "Woori Bank Vietnam",
-      "rank": 36,
+      "rank": 31,
       "is_own": false,
-      "visibility_pct": 0.8,
+      "visibility_pct": 2.5,
       "has_llms_txt": false,
       "url": null
     },
     {
       "brand": "KienlongBank",
-      "rank": 36,
+      "rank": 32,
       "is_own": false,
-      "visibility_pct": 0.8,
+      "visibility_pct": 1.7,
       "has_llms_txt": false,
       "url": null
     },
     {
-      "brand": "Vikki Bank",
-      "rank": 36,
+      "brand": "Vietbank",
+      "rank": 32,
+      "is_own": false,
+      "visibility_pct": 1.7,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "OceanBank",
+      "rank": 32,
+      "is_own": false,
+      "visibility_pct": 1.7,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "VietABank",
+      "rank": 35,
       "is_own": false,
       "visibility_pct": 0.8,
       "has_llms_txt": false,
@@ -2825,6 +2835,38 @@
     },
     {
       "brand": "PGBank",
+      "rank": 35,
+      "is_own": false,
+      "visibility_pct": 0.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "ABBank",
+      "rank": 35,
+      "is_own": false,
+      "visibility_pct": 0.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "rank": 35,
+      "is_own": false,
+      "visibility_pct": 0.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "Vikki Bank",
+      "rank": 35,
+      "is_own": false,
+      "visibility_pct": 0.8,
+      "has_llms_txt": false,
+      "url": null
+    },
+    {
+      "brand": "CIMB Vietnam",
       "rank": 40,
       "is_own": false,
       "visibility_pct": 0.0,
@@ -2832,15 +2874,7 @@
       "url": null
     },
     {
-      "brand": "VietABank",
-      "rank": 40,
-      "is_own": false,
-      "visibility_pct": 0.0,
-      "has_llms_txt": false,
-      "url": null
-    },
-    {
-      "brand": "Vietbank",
+      "brand": "MBV",
       "rank": 40,
       "is_own": false,
       "visibility_pct": 0.0,
@@ -2854,55 +2888,98 @@
       "visibility_pct": 0.0,
       "has_llms_txt": false,
       "url": null
+    },
+    {
+      "brand": "Liobank",
+      "rank": 40,
+      "is_own": false,
+      "visibility_pct": 0.0,
+      "has_llms_txt": true,
+      "url": "https://liobank.vn/llms.txt"
     }
   ],
   "visibility_by_pillar": [
     {
+      "brand": "Techcombank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 36,
+      "pillar_pct": 81.8
+    },
+    {
+      "brand": "Vietcombank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 33,
+      "pillar_pct": 75.0
+    },
+    {
       "brand": "VPBank",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 37,
-      "pillar_pct": 84.1
+      "mentions": 33,
+      "pillar_pct": 75.0
     },
     {
-      "brand": "Techcombank",
+      "brand": "TPBank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 32,
+      "pillar_pct": 72.7
+    },
+    {
+      "brand": "MB Bank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 31,
       "pillar_pct": 70.5
     },
     {
-      "brand": "TPBank",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 25,
-      "pillar_pct": 56.8
-    },
-    {
-      "brand": "Vietcombank",
+      "brand": "VIB",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 23,
       "pillar_pct": 52.3
     },
     {
-      "brand": "MB Bank",
+      "brand": "BIDV",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 22,
-      "pillar_pct": 50.0
+      "mentions": 21,
+      "pillar_pct": 47.7
     },
     {
-      "brand": "VIB",
+      "brand": "Cake by VPBank",
+      "pillar": "Differentiator",
+      "is_own": true,
+      "mentions": 19,
+      "pillar_pct": 43.2
+    },
+    {
+      "brand": "ACB",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 18,
+      "pillar_pct": 40.9
+    },
+    {
+      "brand": "VietinBank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 17,
       "pillar_pct": 38.6
     },
     {
-      "brand": "Cake by VPBank",
+      "brand": "Agribank",
       "pillar": "Differentiator",
-      "is_own": true,
+      "is_own": false,
+      "mentions": 15,
+      "pillar_pct": 34.1
+    },
+    {
+      "brand": "Shinhan Bank Vietnam",
+      "pillar": "Differentiator",
+      "is_own": false,
       "mentions": 15,
       "pillar_pct": 34.1
     },
@@ -2910,67 +2987,60 @@
       "brand": "Timo",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 12,
-      "pillar_pct": 27.3
-    },
-    {
-      "brand": "BVBank",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 12,
-      "pillar_pct": 27.3
-    },
-    {
-      "brand": "BIDV",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 12,
-      "pillar_pct": 27.3
+      "mentions": 11,
+      "pillar_pct": 25.0
     },
     {
       "brand": "MSB",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 9,
-      "pillar_pct": 20.5
+      "mentions": 11,
+      "pillar_pct": 25.0
     },
     {
-      "brand": "Agribank",
+      "brand": "Sacombank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 10,
+      "pillar_pct": 22.7
+    },
+    {
+      "brand": "HSBC Vietnam",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 8,
       "pillar_pct": 18.2
     },
     {
-      "brand": "VietinBank",
+      "brand": "SHB",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 6,
-      "pillar_pct": 13.6
+      "mentions": 7,
+      "pillar_pct": 15.9
+    },
+    {
+      "brand": "BVBank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 7,
+      "pillar_pct": 15.9
     },
     {
       "brand": "TNEX",
       "pillar": "Differentiator",
       "is_own": false,
+      "mentions": 7,
+      "pillar_pct": 15.9
+    },
+    {
+      "brand": "HDBank",
+      "pillar": "Differentiator",
+      "is_own": false,
       "mentions": 6,
       "pillar_pct": 13.6
     },
     {
-      "brand": "HSBC Vietnam",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 11.4
-    },
-    {
-      "brand": "ACB",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 11.4
-    },
-    {
-      "brand": "SHB",
+      "brand": "Standard Chartered Vietnam",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 5,
@@ -2984,39 +3054,39 @@
       "pillar_pct": 11.4
     },
     {
-      "brand": "Hong Leong Bank Vietnam",
+      "brand": "NCB",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 4,
       "pillar_pct": 9.1
-    },
-    {
-      "brand": "Shinhan Bank Vietnam",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 9.1
-    },
-    {
-      "brand": "Liobank",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 6.8
     },
     {
       "brand": "UOB Vietnam",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 6.8
+      "mentions": 4,
+      "pillar_pct": 9.1
     },
     {
-      "brand": "Standard Chartered Vietnam",
+      "brand": "LPBank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 3,
       "pillar_pct": 6.8
+    },
+    {
+      "brand": "Woori Bank Vietnam",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 4.5
+    },
+    {
+      "brand": "PVcomBank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 4.5
     },
     {
       "brand": "Nam A Bank",
@@ -3026,18 +3096,11 @@
       "pillar_pct": 4.5
     },
     {
-      "brand": "NCB",
+      "brand": "BAC A BANK",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 2,
       "pillar_pct": 4.5
-    },
-    {
-      "brand": "Woori Bank Vietnam",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.3
     },
     {
       "brand": "OceanBank",
@@ -3047,28 +3110,42 @@
       "pillar_pct": 2.3
     },
     {
-      "brand": "Sacombank",
+      "brand": "SeABank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
       "pillar_pct": 2.3
     },
     {
-      "brand": "BAC A BANK",
+      "brand": "KienlongBank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
       "pillar_pct": 2.3
     },
     {
-      "brand": "MBV",
+      "brand": "VietABank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
       "pillar_pct": 2.3
     },
     {
-      "brand": "PVcomBank",
+      "brand": "PGBank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.3
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.3
+    },
+    {
+      "brand": "Vietbank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
@@ -3078,88 +3155,109 @@
       "brand": "Techcombank",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 16,
-      "pillar_pct": 66.7
-    },
-    {
-      "brand": "VPBank",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 15,
-      "pillar_pct": 62.5
+      "mentions": 19,
+      "pillar_pct": 79.2
     },
     {
       "brand": "BIDV",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 12,
-      "pillar_pct": 50.0
+      "mentions": 17,
+      "pillar_pct": 70.8
     },
     {
-      "brand": "VIB",
+      "brand": "VPBank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 17,
+      "pillar_pct": 70.8
+    },
+    {
+      "brand": "MB Bank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 14,
+      "pillar_pct": 58.3
+    },
+    {
+      "brand": "TPBank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 14,
+      "pillar_pct": 58.3
+    },
+    {
+      "brand": "Vietcombank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 13,
+      "pillar_pct": 54.2
+    },
+    {
+      "brand": "Agribank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 11,
       "pillar_pct": 45.8
     },
     {
-      "brand": "TPBank",
+      "brand": "Sacombank",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 9,
-      "pillar_pct": 37.5
+      "mentions": 10,
+      "pillar_pct": 41.7
     },
     {
-      "brand": "Vietcombank",
+      "brand": "VIB",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 9,
-      "pillar_pct": 37.5
-    },
-    {
-      "brand": "Cake by VPBank",
-      "pillar": "Hygienic",
-      "is_own": true,
-      "mentions": 5,
-      "pillar_pct": 20.8
-    },
-    {
-      "brand": "Timo",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 20.8
-    },
-    {
-      "brand": "Agribank",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 20.8
-    },
-    {
-      "brand": "VietinBank",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 20.8
-    },
-    {
-      "brand": "MSB",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 16.7
+      "mentions": 10,
+      "pillar_pct": 41.7
     },
     {
       "brand": "ACB",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 16.7
+      "mentions": 10,
+      "pillar_pct": 41.7
     },
     {
-      "brand": "Sacombank",
+      "brand": "VietinBank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 10,
+      "pillar_pct": 41.7
+    },
+    {
+      "brand": "Cake by VPBank",
+      "pillar": "Hygienic",
+      "is_own": true,
+      "mentions": 8,
+      "pillar_pct": 33.3
+    },
+    {
+      "brand": "Timo",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 6,
+      "pillar_pct": 25.0
+    },
+    {
+      "brand": "HSBC Vietnam",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 5,
+      "pillar_pct": 20.8
+    },
+    {
+      "brand": "HDBank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 5,
+      "pillar_pct": 20.8
+    },
+    {
+      "brand": "UOB Vietnam",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 4,
@@ -3173,28 +3271,21 @@
       "pillar_pct": 16.7
     },
     {
-      "brand": "HSBC Vietnam",
+      "brand": "Shinhan Bank Vietnam",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 4,
       "pillar_pct": 16.7
     },
     {
-      "brand": "HDBank",
+      "brand": "MSB",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 3,
       "pillar_pct": 12.5
     },
     {
-      "brand": "Shinhan Bank Vietnam",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 12.5
-    },
-    {
-      "brand": "MB Bank",
+      "brand": "Standard Chartered Vietnam",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 3,
@@ -3204,22 +3295,29 @@
       "brand": "LPBank",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 12.5
+      "mentions": 2,
+      "pillar_pct": 8.3
     },
     {
-      "brand": "NCB",
+      "brand": "TNEX",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 2,
       "pillar_pct": 8.3
     },
     {
-      "brand": "UOB Vietnam",
+      "brand": "OCB",
       "pillar": "Hygienic",
       "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 8.3
+      "mentions": 1,
+      "pillar_pct": 4.2
+    },
+    {
+      "brand": "BAC A BANK",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 4.2
     },
     {
       "brand": "SHB",
@@ -3229,13 +3327,6 @@
       "pillar_pct": 4.2
     },
     {
-      "brand": "ABBank",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 4.2
-    },
-    {
       "brand": "PVcomBank",
       "pillar": "Hygienic",
       "is_own": false,
@@ -3243,14 +3334,7 @@
       "pillar_pct": 4.2
     },
     {
-      "brand": "OCB",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 4.2
-    },
-    {
-      "brand": "KienlongBank",
+      "brand": "ABBank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 1,
@@ -3264,14 +3348,35 @@
       "pillar_pct": 4.2
     },
     {
+      "brand": "Nam A Bank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 4.2
+    },
+    {
+      "brand": "SeABank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 4.2
+    },
+    {
       "brand": "Techcombank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 10,
+      "pillar_pct": 83.3
+    },
+    {
+      "brand": "VPBank",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 9,
       "pillar_pct": 75.0
     },
     {
-      "brand": "VPBank",
+      "brand": "Vietcombank",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 8,
@@ -3281,11 +3386,11 @@
       "brand": "Timo",
       "pillar": "Low priority",
       "is_own": false,
-      "mentions": 7,
-      "pillar_pct": 58.3
+      "mentions": 6,
+      "pillar_pct": 50.0
     },
     {
-      "brand": "Vietcombank",
+      "brand": "BIDV",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 6,
@@ -3295,71 +3400,106 @@
       "brand": "Cake by VPBank",
       "pillar": "Low priority",
       "is_own": true,
-      "mentions": 5,
-      "pillar_pct": 41.7
-    },
-    {
-      "brand": "BVBank",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 41.7
-    },
-    {
-      "brand": "SeABank",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 33.3
-    },
-    {
-      "brand": "VIB",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 33.3
-    },
-    {
-      "brand": "HDBank",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 25.0
+      "mentions": 6,
+      "pillar_pct": 50.0
     },
     {
       "brand": "MB Bank",
       "pillar": "Low priority",
       "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 25.0
+      "mentions": 6,
+      "pillar_pct": 50.0
     },
     {
       "brand": "TPBank",
       "pillar": "Low priority",
       "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 25.0
+      "mentions": 5,
+      "pillar_pct": 41.7
     },
     {
-      "brand": "BIDV",
+      "brand": "ACB",
       "pillar": "Low priority",
       "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 25.0
+      "mentions": 4,
+      "pillar_pct": 33.3
+    },
+    {
+      "brand": "BVBank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 4,
+      "pillar_pct": 33.3
     },
     {
       "brand": "Agribank",
       "pillar": "Low priority",
       "is_own": false,
+      "mentions": 4,
+      "pillar_pct": 33.3
+    },
+    {
+      "brand": "HSBC Vietnam",
+      "pillar": "Low priority",
+      "is_own": false,
       "mentions": 3,
       "pillar_pct": 25.0
     },
     {
-      "brand": "TNEX",
+      "brand": "VIB",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 2,
       "pillar_pct": 16.7
+    },
+    {
+      "brand": "VietinBank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "LPBank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "Shinhan Bank Vietnam",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "HDBank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "UOB Vietnam",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 8.3
+    },
+    {
+      "brand": "Sacombank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 8.3
     },
     {
       "brand": "Nam A Bank",
@@ -3369,7 +3509,21 @@
       "pillar_pct": 8.3
     },
     {
-      "brand": "ABBank",
+      "brand": "SHB",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 8.3
+    },
+    {
+      "brand": "SeABank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 8.3
+    },
+    {
+      "brand": "TNEX",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 1,
@@ -3377,20 +3531,6 @@
     },
     {
       "brand": "MSB",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 8.3
-    },
-    {
-      "brand": "UOB Vietnam",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 8.3
-    },
-    {
-      "brand": "VietinBank",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 1,
@@ -3400,109 +3540,116 @@
       "brand": "Techcombank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 33,
-      "pillar_pct": 82.5
+      "mentions": 37,
+      "pillar_pct": 92.5
     },
     {
       "brand": "Vietcombank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 26,
-      "pillar_pct": 65.0
-    },
-    {
-      "brand": "VPBank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 26,
-      "pillar_pct": 65.0
+      "mentions": 31,
+      "pillar_pct": 77.5
     },
     {
       "brand": "BIDV",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 19,
-      "pillar_pct": 47.5
+      "mentions": 29,
+      "pillar_pct": 72.5
     },
     {
-      "brand": "VIB",
+      "brand": "VPBank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 19,
-      "pillar_pct": 47.5
+      "mentions": 27,
+      "pillar_pct": 67.5
     },
     {
       "brand": "MB Bank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 18,
-      "pillar_pct": 45.0
+      "mentions": 27,
+      "pillar_pct": 67.5
     },
     {
       "brand": "VietinBank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 16,
-      "pillar_pct": 40.0
-    },
-    {
-      "brand": "Agribank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 15,
-      "pillar_pct": 37.5
+      "mentions": 23,
+      "pillar_pct": 57.5
     },
     {
       "brand": "ACB",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 15,
-      "pillar_pct": 37.5
+      "mentions": 21,
+      "pillar_pct": 52.5
+    },
+    {
+      "brand": "VIB",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 20,
+      "pillar_pct": 50.0
+    },
+    {
+      "brand": "Agribank",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 19,
+      "pillar_pct": 47.5
     },
     {
       "brand": "TPBank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 14,
-      "pillar_pct": 35.0
+      "mentions": 19,
+      "pillar_pct": 47.5
     },
     {
-      "brand": "Cake by VPBank",
+      "brand": "HSBC Vietnam",
       "pillar": "Motivator",
-      "is_own": true,
-      "mentions": 10,
-      "pillar_pct": 25.0
+      "is_own": false,
+      "mentions": 12,
+      "pillar_pct": 30.0
     },
     {
-      "brand": "HDBank",
+      "brand": "Sacombank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 8,
       "pillar_pct": 20.0
     },
     {
-      "brand": "Timo",
+      "brand": "Cake by VPBank",
+      "pillar": "Motivator",
+      "is_own": true,
+      "mentions": 8,
+      "pillar_pct": 20.0
+    },
+    {
+      "brand": "HDBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 7,
       "pillar_pct": 17.5
     },
     {
-      "brand": "BVBank",
+      "brand": "Shinhan Bank Vietnam",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 6,
       "pillar_pct": 15.0
     },
     {
-      "brand": "MSB",
+      "brand": "Standard Chartered Vietnam",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 5,
       "pillar_pct": 12.5
     },
     {
-      "brand": "HSBC Vietnam",
+      "brand": "Timo",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 5,
@@ -3512,39 +3659,39 @@
       "brand": "Eximbank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 5,
-      "pillar_pct": 12.5
-    },
-    {
-      "brand": "OCB",
-      "pillar": "Motivator",
-      "is_own": false,
       "mentions": 4,
       "pillar_pct": 10.0
     },
     {
-      "brand": "Shinhan Bank Vietnam",
+      "brand": "BVBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 3,
       "pillar_pct": 7.5
     },
     {
-      "brand": "OceanBank",
+      "brand": "BAC A BANK",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 3,
+      "pillar_pct": 7.5
+    },
+    {
+      "brand": "UOB Vietnam",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 2,
       "pillar_pct": 5.0
     },
     {
-      "brand": "Liobank",
+      "brand": "LPBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 2,
       "pillar_pct": 5.0
     },
     {
-      "brand": "Sacombank",
+      "brand": "TNEX",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 2,
@@ -3558,42 +3705,35 @@
       "pillar_pct": 5.0
     },
     {
-      "brand": "SeABank",
+      "brand": "SHB",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
+      "mentions": 2,
+      "pillar_pct": 5.0
     },
     {
-      "brand": "TNEX",
+      "brand": "NCB",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
+      "mentions": 2,
+      "pillar_pct": 5.0
     },
     {
-      "brand": "CIMB Vietnam",
+      "brand": "OCB",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
+      "mentions": 2,
+      "pillar_pct": 5.0
     },
     {
-      "brand": "MBV",
+      "brand": "MSB",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
+      "mentions": 2,
+      "pillar_pct": 5.0
     },
     {
-      "brand": "LPBank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
+      "brand": "Vietbank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 1,
@@ -3601,6 +3741,27 @@
     },
     {
       "brand": "Nam A Bank",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.5
+    },
+    {
+      "brand": "KienlongBank",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.5
+    },
+    {
+      "brand": "SeABank",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.5
+    },
+    {
+      "brand": "OceanBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 1,
@@ -3614,14 +3775,7 @@
       "pillar_pct": 2.5
     },
     {
-      "brand": "SHB",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
-    },
-    {
-      "brand": "BAC A BANK",
+      "brand": "Woori Bank Vietnam",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 1,
@@ -3633,7 +3787,7 @@
       "brand": "Techcombank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 4.82,
+      "aei": 4.21,
       "band": "Strong",
       "rank": 1
     },
@@ -3641,63 +3795,63 @@
       "brand": "VPBank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 4.4,
+      "aei": 3.44,
       "band": "Strong",
       "rank": 2
-    },
-    {
-      "brand": "Vietcombank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 3.48,
-      "band": "Strong",
-      "rank": 3
-    },
-    {
-      "brand": "TPBank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 2.76,
-      "band": "Moderate",
-      "rank": 4
-    },
-    {
-      "brand": "BIDV",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 2.48,
-      "band": "Moderate",
-      "rank": 5
     },
     {
       "brand": "MB Bank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 2.48,
+      "aei": 3.26,
+      "band": "Strong",
+      "rank": 3
+    },
+    {
+      "brand": "Vietcombank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 3.22,
+      "band": "Strong",
+      "rank": 4
+    },
+    {
+      "brand": "TPBank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 2.88,
       "band": "Moderate",
       "rank": 5
+    },
+    {
+      "brand": "BIDV",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 2.82,
+      "band": "Moderate",
+      "rank": 6
+    },
+    {
+      "brand": "ACB",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 2.14,
+      "band": "Moderate",
+      "rank": 7
     },
     {
       "brand": "VIB",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 2.23,
-      "band": "Moderate",
-      "rank": 7
-    },
-    {
-      "brand": "Cake by VPBank",
-      "is_own": true,
-      "segment": "digital",
-      "aei": 2.08,
+      "aei": 1.94,
       "band": "Moderate",
       "rank": 8
     },
     {
-      "brand": "Timo",
+      "brand": "VietinBank",
       "is_own": false,
-      "segment": "digital",
-      "aei": 1.72,
+      "segment": "incumbent",
+      "aei": 1.91,
       "band": "Moderate",
       "rank": 9
     },
@@ -3705,47 +3859,47 @@
       "brand": "Agribank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 1.64,
+      "aei": 1.83,
       "band": "Moderate",
       "rank": 10
     },
     {
-      "brand": "VietinBank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 1.47,
+      "brand": "Cake by VPBank",
+      "is_own": true,
+      "segment": "digital",
+      "aei": 1.82,
       "band": "Moderate",
       "rank": 11
-    },
-    {
-      "brand": "ACB",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 1.34,
-      "band": "Moderate",
-      "rank": 12
-    },
-    {
-      "brand": "BVBank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 1.1,
-      "band": "Moderate",
-      "rank": 13
-    },
-    {
-      "brand": "MSB",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.92,
-      "band": "Weak",
-      "rank": 14
     },
     {
       "brand": "HSBC Vietnam",
       "is_own": false,
       "segment": "foreign",
-      "aei": 0.78,
+      "aei": 1.1,
+      "band": "Moderate",
+      "rank": 12
+    },
+    {
+      "brand": "Sacombank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 1.08,
+      "band": "Moderate",
+      "rank": 13
+    },
+    {
+      "brand": "Timo",
+      "is_own": false,
+      "segment": "digital",
+      "aei": 1.02,
+      "band": "Moderate",
+      "rank": 14
+    },
+    {
+      "brand": "Shinhan Bank Vietnam",
+      "is_own": false,
+      "segment": "foreign",
+      "aei": 0.91,
       "band": "Weak",
       "rank": 15
     },
@@ -3753,95 +3907,95 @@
       "brand": "HDBank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.73,
+      "aei": 0.64,
       "band": "Weak",
       "rank": 16
     },
     {
-      "brand": "Shinhan Bank Vietnam",
+      "brand": "BVBank",
       "is_own": false,
-      "segment": "foreign",
-      "aei": 0.47,
+      "segment": "incumbent",
+      "aei": 0.54,
       "band": "Weak",
       "rank": 17
-    },
-    {
-      "brand": "TNEX",
-      "is_own": false,
-      "segment": "digital",
-      "aei": 0.47,
-      "band": "Weak",
-      "rank": 18
-    },
-    {
-      "brand": "OCB",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.46,
-      "band": "Weak",
-      "rank": 19
-    },
-    {
-      "brand": "Sacombank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.32,
-      "band": "Weak",
-      "rank": 20
-    },
-    {
-      "brand": "SHB",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.32,
-      "band": "Weak",
-      "rank": 20
-    },
-    {
-      "brand": "Eximbank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.31,
-      "band": "Weak",
-      "rank": 22
     },
     {
       "brand": "UOB Vietnam",
       "is_own": false,
       "segment": "foreign",
-      "aei": 0.27,
+      "aei": 0.53,
+      "band": "Weak",
+      "rank": 18
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
+      "is_own": false,
+      "segment": "foreign",
+      "aei": 0.52,
+      "band": "Weak",
+      "rank": 19
+    },
+    {
+      "brand": "MSB",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.51,
+      "band": "Weak",
+      "rank": 20
+    },
+    {
+      "brand": "LPBank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.35,
+      "band": "Weak",
+      "rank": 21
+    },
+    {
+      "brand": "TNEX",
+      "is_own": false,
+      "segment": "digital",
+      "aei": 0.35,
+      "band": "Weak",
+      "rank": 22
+    },
+    {
+      "brand": "SHB",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.31,
       "band": "Weak",
       "rank": 23
     },
     {
-      "brand": "SeABank",
+      "brand": "OCB",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.23,
+      "aei": 0.27,
       "band": "Weak",
       "rank": 24
-    },
-    {
-      "brand": "Hong Leong Bank Vietnam",
-      "is_own": false,
-      "segment": "foreign",
-      "aei": 0.23,
-      "band": "Weak",
-      "rank": 24
-    },
-    {
-      "brand": "Liobank",
-      "is_own": false,
-      "segment": "digital",
-      "aei": 0.22,
-      "band": "Weak",
-      "rank": 26
     },
     {
       "brand": "NCB",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.18,
+      "aei": 0.2,
+      "band": "Weak",
+      "rank": 25
+    },
+    {
+      "brand": "BAC A BANK",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.2,
+      "band": "Weak",
+      "rank": 25
+    },
+    {
+      "brand": "Eximbank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.19,
       "band": "Weak",
       "rank": 27
     },
@@ -3849,31 +4003,31 @@
       "brand": "PVcomBank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.18,
+      "aei": 0.17,
       "band": "Weak",
-      "rank": 27
-    },
-    {
-      "brand": "LPBank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.18,
-      "band": "Weak",
-      "rank": 27
+      "rank": 28
     },
     {
       "brand": "Nam A Bank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.15,
+      "aei": 0.17,
+      "band": "Weak",
+      "rank": 28
+    },
+    {
+      "brand": "SeABank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.11,
       "band": "Weak",
       "rank": 30
     },
     {
-      "brand": "Standard Chartered Vietnam",
+      "brand": "Woori Bank Vietnam",
       "is_own": false,
       "segment": "foreign",
-      "aei": 0.14,
+      "aei": 0.09,
       "band": "Weak",
       "rank": 31
     },
@@ -3881,148 +4035,148 @@
       "brand": "OceanBank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.12,
+      "aei": 0.06,
       "band": "Weak",
       "rank": 32
-    },
-    {
-      "brand": "BAC A BANK",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.08,
-      "band": "Weak",
-      "rank": 33
-    },
-    {
-      "brand": "MBV",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.07,
-      "band": "Weak",
-      "rank": 34
-    },
-    {
-      "brand": "ABBank",
-      "is_own": false,
-      "segment": "incumbent",
-      "aei": 0.07,
-      "band": "Weak",
-      "rank": 34
-    },
-    {
-      "brand": "CIMB Vietnam",
-      "is_own": false,
-      "segment": "foreign",
-      "aei": 0.03,
-      "band": "Weak",
-      "rank": 36
-    },
-    {
-      "brand": "Woori Bank Vietnam",
-      "is_own": false,
-      "segment": "foreign",
-      "aei": 0.03,
-      "band": "Weak",
-      "rank": 36
     },
     {
       "brand": "KienlongBank",
       "is_own": false,
       "segment": "incumbent",
-      "aei": 0.03,
+      "aei": 0.05,
       "band": "Weak",
-      "rank": 36
+      "rank": 33
+    },
+    {
+      "brand": "Vietbank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.05,
+      "band": "Weak",
+      "rank": 33
+    },
+    {
+      "brand": "VietABank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.02,
+      "band": "Weak",
+      "rank": 35
+    },
+    {
+      "brand": "PGBank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.02,
+      "band": "Weak",
+      "rank": 35
+    },
+    {
+      "brand": "ABBank",
+      "is_own": false,
+      "segment": "incumbent",
+      "aei": 0.02,
+      "band": "Weak",
+      "rank": 35
+    },
+    {
+      "brand": "Hong Leong Bank Vietnam",
+      "is_own": false,
+      "segment": "foreign",
+      "aei": 0.02,
+      "band": "Weak",
+      "rank": 35
     },
     {
       "brand": "Vikki Bank",
       "is_own": false,
       "segment": "digital",
-      "aei": 0.03,
+      "aei": 0.02,
       "band": "Weak",
-      "rank": 36
+      "rank": 35
     }
   ],
   "insights": {
     "analysis": [
       {
         "heading": "Chỉ số AEI tổng thể",
-        "body": "Cake by VPBank đạt AEI 2.08, xếp band Moderate, đứng hạng 8/43 thương hiệu được theo dõi. Trong nhóm ngân hàng số, Cake giữ vị trí số 1, vượt Timo (AEI 1.72) và bỏ xa các đối thủ còn lại như TNEX (0.47), Liobank (0.22), Vikki Bank (0.03). Tuy nhiên, khoảng cách với nhóm dẫn đầu vẫn lớn: Techcombank (4.82), VPBank (4.40), Vietcombank (3.48) đều ở band Strong. Cake hiện hiện diện trong 29.2% câu trả lời với 35 lượt nhắc và SOV chỉ 4.6%."
+        "body": "Cake by VPBank đạt AEI 1.82, thuộc band Moderate, đứng hạng 11/43 thương hiệu được theo dõi. Trong nhóm ngân hàng số, Cake dẫn đầu (hạng 1/4), bỏ xa Timo (1.02), TNEX (0.35) và Vikki Bank (0.02). Tuy nhiên, khoảng cách với các ngân hàng truyền thống top đầu còn lớn: Techcombank (4.21), VPBank (3.44), MB Bank (3.26). Độ hiển thị (visibility) đạt 34.2%, SOV chỉ 4.0% với 41 lượt nhắc."
       },
       {
         "heading": "Theo trụ cột nhu cầu khách hàng",
-        "body": "Xét theo trụ cột, Cake mạnh nhất ở nhóm Low priority (41.7%) và Differentiator (34.1%), trong khi yếu nhất ở Hygienic (20.8%). Đáng lưu ý, trụ cột Motivator — nhóm yếu tố quyết định lựa chọn của khách hàng — chỉ đạt 25.0%, là một khoảng trống chiến lược cần ưu tiên. Việc hiện diện thấp ở Motivator đồng nghĩa thương hiệu chưa được AI gắn với các lý do thúc đẩy chuyển đổi, ảnh hưởng trực tiếp đến khả năng cạnh tranh ở các quyết định mua/sử dụng."
+        "body": "Trụ cột mạnh nhất về độ hiển thị là Low priority (50.0%) và Differentiator (43.2%), cho thấy Cake được nhận diện tốt ở các yếu tố khác biệt hóa. Trụ cột Hygienic đạt 33.3%. Đáng lo ngại nhất là nhóm Motivator chỉ đạt 20.0% — đây là nhóm yếu tố quyết định lựa chọn của khách hàng, tạo khoảng trống lớn cần ưu tiên khắc phục để chuyển hóa nhận biết thành lựa chọn thực tế."
       },
       {
         "heading": "Ma trận điểm mạnh vs cần cải thiện",
-        "body": "Điểm cần cải thiện (IMPROVE — prompt cạnh tranh cao nhưng thương hiệu vắng mặt): (1) Lãi suất và phí rõ ràng, minh bạch (thẻ); (2) Cung cấp sản phẩm/dịch vụ đáp ứng nhu cầu (SME); (3) Quy trình thu hồi nợ lịch sự, chuyên nghiệp (vay); (4) Quy trình đăng ký nhanh và dễ dàng (tài khoản). Điểm mạnh cần bảo vệ (DEFEND): (1) Cung cấp sản phẩm/dịch vụ đáp ứng nhu cầu (tiết kiệm); (2) Lãi suất và phí minh bạch (vay); (3) Là công ty tài chính số (digital). Cần lấp các IMPROVE để mở rộng độ phủ và củng cố DEFEND nhằm giữ vị thế."
+        "body": "Điểm cần cải thiện (IMPROVE — prompt cạnh tranh cao nhưng thương hiệu vắng mặt): (1) Lãi suất và phí minh bạch, rõ ràng (vay); (2) Trả nợ dễ dàng, thuận tiện (vay); (3) Cung cấp sản phẩm/dịch vụ đáp ứng nhu cầu (SME); (4) Thương hiệu đáng tin cậy và trung thực (chung). Điểm mạnh cần bảo vệ (DEFEND): (1) Cung cấp sản phẩm/dịch vụ đáp ứng nhu cầu (tiết kiệm); (2) Quy trình đăng ký nhanh và dễ (tài khoản); (3) Lãi suất và phí cạnh tranh (tiết kiệm)."
       },
       {
         "heading": "Vị thế trong nhóm ngân hàng số",
-        "body": "Cake by VPBank dẫn đầu nhóm ngân hàng số với AEI 2.08, cao hơn Timo (1.72) khoảng 0.36 điểm — cả hai đều ở band Moderate. Khoảng cách với phần còn lại rất rộng: TNEX (0.47), Liobank (0.22), Vikki Bank (0.03) đều thuộc band Weak. Thách thức thực sự nằm ở việc thu hẹp khoảng cách với nhóm incumbent dẫn đầu."
+        "body": "Cake by VPBank là thương hiệu ngân hàng số dẫn đầu rõ rệt với AEI 1.82, cao gần gấp đôi Timo (1.02 — cùng band Moderate) và vượt trội so với TNEX (0.35, Weak) và Vikki Bank (0.02, Weak). Về hạng tổng, Cake (11) cũng xếp trên Timo (14), TNEX (22) và Vikki Bank (35). Đây là lợi thế dẫn đầu phân khúc digital cần được củng cố."
       },
       {
         "heading": "Nguồn & AI-readiness",
-        "body": "Cake by VPBank đã có file llms.txt — một trong chỉ 2 thương hiệu được theo dõi sở hữu yếu tố AI-readiness này, tạo lợi thế về khả năng được mô hình AI đọc và trích dẫn đúng. Báo cáo tổng hợp 509 trích dẫn trên 120 câu trả lời từ 4 mô hình (DeepSeek V4, GPT-5.5, Gemini 3.5, Opus 4.6) cho 30 prompt. Tỷ lệ sentiment tích cực của Cake đạt 94.3% (trên 35 lượt nhắc, vượt ngưỡng tối thiểu 10), cho thấy chất lượng đề cập tốt — cần kết hợp tăng độ phủ để khai thác lợi thế này."
+        "body": "Cake đã có file llms.txt — một trong 2 thương hiệu trên tổng số được theo dõi sở hữu yếu tố này, thể hiện mức độ sẵn sàng AI tốt. Toàn hệ thống ghi nhận 884 trích dẫn trên 120 câu trả lời từ 4 mô hình (DeepSeek V4.1, Gemini 4 Argon, Luna 6, Sonnet 5.5). Sentiment tích cực của Cake đạt 82.9% trên 41 lượt nhắc, vượt ngưỡng tối thiểu 10 lượt để đảm bảo độ tin cậy."
       }
     ],
     "at_a_glance": [
-      "AEI 2.08 (Moderate), hạng 8/43 thương hiệu được theo dõi",
-      "Dẫn đầu nhóm ngân hàng số, vượt Timo (AEI 1.72)",
-      "Hiện diện 29.2% câu trả lời, SOV 4.6%, 35 lượt nhắc",
-      "Sentiment tích cực 94.3%; trụ cột Motivator chỉ 25.0%",
-      "Có llms.txt — 1 trong 2 thương hiệu sở hữu, AI-ready",
-      "Khoảng cách lớn với top: Techcombank AEI 4.82, VPBank 4.40"
+      "AEI 1.82 (band Moderate), hạng 11/43 toàn bảng",
+      "Dẫn đầu nhóm ngân hàng số: 1/4, gấp ~1.8x Timo (1.02)",
+      "Visibility 34.2%, SOV chỉ 4.0%, 41 lượt nhắc",
+      "Sentiment tích cực 82.9%",
+      "Motivator chỉ 20.0% — khoảng trống lớn nhất theo trụ cột",
+      "Có llms.txt (1/2 thương hiệu), 884 trích dẫn / 120 câu trả lời"
     ],
     "generated_by": "claude-opus-4-8"
   },
   "featured_snippets": [
     {
-      "model": "Opus 4.6",
+      "model": "Gemini 4 Argon",
       "brand": "BIDV",
       "sentiment": "positive",
-      "quote": "Nhóm ngân hàng Nhà nước gồm **Vietcombank, BIDV, VietinBank, Agribank** duy trì lãi suất thấp hơn: 2,6% – 2,9% cho kỳ hạn ngắn, khoảng 5,9 – 6%/năm cho kỳ hạn trung và dài."
+      "quote": "Nhóm ưu tiên An toàn tuyệt đối (Khẩu vị rủi ro bằng 0)\n* **Ngân hàng phù hợp:** **Vietcombank, BIDV, VietinBank, Agribank** (Nhóm Big 4 ngân hàng quốc doanh)."
     },
     {
-      "model": "Opus 4.6",
+      "model": "Gemini 4 Argon",
       "brand": "Vietcombank",
       "sentiment": "positive",
-      "quote": "Nhóm ngân hàng Nhà nước gồm **Vietcombank, BIDV, VietinBank, Agribank** duy trì lãi suất thấp hơn: 2,6% – 2,9% cho kỳ hạn ngắn, khoảng 5,9 – 6%/năm cho kỳ hạn trung và dài."
+      "quote": "Nhóm ưu tiên An toàn tuyệt đối (Khẩu vị rủi ro bằng 0)\n* **Ngân hàng phù hợp:** **Vietcombank, BIDV, VietinBank, Agribank** (Nhóm Big 4 ngân hàng quốc doanh)."
     },
     {
-      "model": "Opus 4.6",
-      "brand": "VPBank",
-      "sentiment": "neutral",
-      "quote": "- Mức cao nhất dành cho khách hàng online là **8,9%/năm** tại **Cake by VPBank**."
-    },
-    {
-      "model": "Opus 4.6",
-      "brand": "VIB",
-      "sentiment": "neutral",
-      "quote": "| Nhu cầu | Gợi ý ngân hàng |\n|---|---|\n| 💰 Lãi cao nhất, chấp nhận NH nhỏ | **HLBank, MBV, BacABank** |\n| 📱 Gửi online tiện lợi, lãi tốt | **Cake by VPBank, LPBank** |\n| 🛡️ An toàn, uy tín lớn | **Vietcombank, BIDV, VietinBank, Agribank** |\n| ⏱️ Kỳ hạn ngắn (3 tháng) | **VPBank, VIB, OCB, Sacombank** (~4,75%) |"
-    },
-    {
-      "model": "Opus 4.6",
-      "brand": "Cake by VPBank",
+      "model": "Gemini 4 Argon",
+      "brand": "MB Bank",
       "sentiment": "positive",
-      "quote": "- Mức cao nhất dành cho khách hàng online là **8,9%/năm** tại **Cake by VPBank**."
+      "quote": "Nhóm ưu tiên An toàn tuyệt đối (Khẩu vị rủi ro bằng 0)\n* **Ngân hàng phù hợp:** **Vietcombank, BIDV, VietinBank, Agribank** (Nhóm Big 4 ngân hàng quốc doanh)."
     },
     {
-      "model": "DeepSeek V4",
-      "brand": "Vietcombank",
-      "sentiment": "positive",
-      "quote": "- *Hoặc*: **Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)**: Uy tín hàng đầu, lãi suất ~5.3-5.6%/năm."
-    },
-    {
-      "model": "DeepSeek V4",
+      "model": "Gemini 4 Argon",
       "brand": "VPBank",
       "sentiment": "positive",
-      "quote": "- **Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)**: Gói “Tiết kiệm Easy” có thể rút trước hạn nhưng vẫn được hưởng lãi suất ưu đãi theo bậc thang."
+      "quote": "Nhóm cân bằng: Uy tín cao, App thông minh, Linh hoạt dòng tiền\n* **Ngân hàng phù hợp:** **Techcombank, MB Bank, ACB, VPBank**."
     },
     {
-      "model": "DeepSeek V4",
+      "model": "Gemini 4 Argon",
       "brand": "Techcombank",
       "sentiment": "positive",
-      "quote": "- **Ngân hàng TMCP Kỹ Thương (Techcombank)**: Sản phẩm “Tiết kiệm linh hoạt” cho phép rút một phần gốc mà không mất hết lãi."
+      "quote": "Nhóm cân bằng: Uy tín cao, App thông minh, Linh hoạt dòng tiền\n* **Ngân hàng phù hợp:** **Techcombank, MB Bank, ACB, VPBank**."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "brand": "Cake by VPBank",
+      "sentiment": "positive",
+      "quote": "Nhóm tối đa hóa Lợi nhuận (Săn lãi suất cao nhất)\n* **Ngân hàng phù hợp:** **HDBank, Bac A Bank, Nam A Bank, NCB** hoặc các ngân hàng số như **Cake by VPBank, Timo by BVBank**."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "brand": "BIDV",
+      "sentiment": "positive",
+      "quote": "*   **Website:** https://www.vietcombank.com.vn\n*   **BIDV hoặc VietinBank:**"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "brand": "Vietcombank",
+      "sentiment": "positive",
+      "quote": "*   **Vietcombank (Ngân hàng Ngoại thương Việt Nam):**"
     }
   ]
 }
