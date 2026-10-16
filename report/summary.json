@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "AI Visibility Report — Vietnamese Banking",
-    "client": "VIB",
+    "client": "Cake by VPBank",
     "topic": "Vietnamese banking products & services",
-    "generated_at": "2026-10-15T14:45:29.974733Z",
+    "generated_at": "2026-10-16T10:56:32.228561Z",
     "answer_models": [
       "DeepSeek V4.1",
       "Gemini 4 Argon",
@@ -2230,7 +2230,7 @@
       "own_present": true,
       "own_mentions": 3,
       "competitors_count": 24,
-      "top_competitor": "MB Bank"
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 2,
@@ -2241,7 +2241,7 @@
       "own_present": true,
       "own_mentions": 2,
       "competitors_count": 14,
-      "top_competitor": "BIDV"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 3,
@@ -2252,7 +2252,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 11,
-      "top_competitor": "HSBC Vietnam"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 4,
@@ -2274,7 +2274,7 @@
       "own_present": true,
       "own_mentions": 1,
       "competitors_count": 15,
-      "top_competitor": "TPBank"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 6,
@@ -2285,7 +2285,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 10,
-      "top_competitor": "MB Bank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 7,
@@ -2296,7 +2296,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 14,
-      "top_competitor": "Techcombank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 8,
@@ -2307,7 +2307,7 @@
       "own_present": true,
       "own_mentions": 1,
       "competitors_count": 12,
-      "top_competitor": "VPBank"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 9,
@@ -2318,7 +2318,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 16,
-      "top_competitor": "Techcombank"
+      "top_competitor": "MB Bank"
     },
     {
       "prompt_id": 10,
@@ -2329,7 +2329,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 17,
-      "top_competitor": "Agribank"
+      "top_competitor": "BIDV"
     },
     {
       "prompt_id": 11,
@@ -2340,7 +2340,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 13,
-      "top_competitor": "Techcombank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 12,
@@ -2351,7 +2351,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 15,
-      "top_competitor": "TPBank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 13,
@@ -2362,7 +2362,7 @@
       "own_present": true,
       "own_mentions": 3,
       "competitors_count": 12,
-      "top_competitor": "MB Bank"
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 14,
@@ -2373,7 +2373,7 @@
       "own_present": true,
       "own_mentions": 4,
       "competitors_count": 18,
-      "top_competitor": "VPBank"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 15,
@@ -2406,7 +2406,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 22,
-      "top_competitor": "Agribank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 18,
@@ -2417,7 +2417,7 @@
       "own_present": true,
       "own_mentions": 4,
       "competitors_count": 12,
-      "top_competitor": "Techcombank"
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 19,
@@ -2428,7 +2428,7 @@
       "own_present": true,
       "own_mentions": 1,
       "competitors_count": 21,
-      "top_competitor": "HDBank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 20,
@@ -2439,7 +2439,7 @@
       "own_present": true,
       "own_mentions": 1,
       "competitors_count": 13,
-      "top_competitor": "VPBank"
+      "top_competitor": "TPBank"
     },
     {
       "prompt_id": 21,
@@ -2450,7 +2450,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 14,
-      "top_competitor": "HSBC Vietnam"
+      "top_competitor": "VPBank"
     },
     {
       "prompt_id": 22,
@@ -2461,7 +2461,7 @@
       "own_present": true,
       "own_mentions": 1,
       "competitors_count": 20,
-      "top_competitor": "VPBank"
+      "top_competitor": "Techcombank"
     },
     {
       "prompt_id": 23,
@@ -2494,7 +2494,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 10,
-      "top_competitor": "Agribank"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 26,
@@ -2538,7 +2538,7 @@
       "own_present": false,
       "own_mentions": 0,
       "competitors_count": 18,
-      "top_competitor": "BIDV"
+      "top_competitor": "Vietcombank"
     },
     {
       "prompt_id": 30,
@@ -2907,14 +2907,14 @@
       "pillar_pct": 81.8
     },
     {
-      "brand": "Vietcombank",
+      "brand": "VPBank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 33,
       "pillar_pct": 75.0
     },
     {
-      "brand": "VPBank",
+      "brand": "Vietcombank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 33,
@@ -2984,14 +2984,14 @@
       "pillar_pct": 34.1
     },
     {
-      "brand": "Timo",
+      "brand": "MSB",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 11,
       "pillar_pct": 25.0
     },
     {
-      "brand": "MSB",
+      "brand": "Timo",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 11,
@@ -3012,13 +3012,6 @@
       "pillar_pct": 18.2
     },
     {
-      "brand": "SHB",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 7,
-      "pillar_pct": 15.9
-    },
-    {
       "brand": "BVBank",
       "pillar": "Differentiator",
       "is_own": false,
@@ -3027,6 +3020,13 @@
     },
     {
       "brand": "TNEX",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 7,
+      "pillar_pct": 15.9
+    },
+    {
+      "brand": "SHB",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 7,
@@ -3075,14 +3075,7 @@
       "pillar_pct": 6.8
     },
     {
-      "brand": "Woori Bank Vietnam",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 4.5
-    },
-    {
-      "brand": "PVcomBank",
+      "brand": "BAC A BANK",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 2,
@@ -3096,21 +3089,21 @@
       "pillar_pct": 4.5
     },
     {
-      "brand": "BAC A BANK",
+      "brand": "PVcomBank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 2,
       "pillar_pct": 4.5
     },
     {
-      "brand": "OceanBank",
+      "brand": "Woori Bank Vietnam",
       "pillar": "Differentiator",
       "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.3
+      "mentions": 2,
+      "pillar_pct": 4.5
     },
     {
-      "brand": "SeABank",
+      "brand": "Hong Leong Bank Vietnam",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
@@ -3124,13 +3117,6 @@
       "pillar_pct": 2.3
     },
     {
-      "brand": "VietABank",
-      "pillar": "Differentiator",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.3
-    },
-    {
       "brand": "PGBank",
       "pillar": "Differentiator",
       "is_own": false,
@@ -3138,14 +3124,28 @@
       "pillar_pct": 2.3
     },
     {
-      "brand": "Hong Leong Bank Vietnam",
+      "brand": "Vietbank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
       "pillar_pct": 2.3
     },
     {
-      "brand": "Vietbank",
+      "brand": "VietABank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.3
+    },
+    {
+      "brand": "SeABank",
+      "pillar": "Differentiator",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 2.3
+    },
+    {
+      "brand": "OceanBank",
       "pillar": "Differentiator",
       "is_own": false,
       "mentions": 1,
@@ -3173,14 +3173,14 @@
       "pillar_pct": 70.8
     },
     {
-      "brand": "MB Bank",
+      "brand": "TPBank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 14,
       "pillar_pct": 58.3
     },
     {
-      "brand": "TPBank",
+      "brand": "MB Bank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 14,
@@ -3201,7 +3201,7 @@
       "pillar_pct": 45.8
     },
     {
-      "brand": "Sacombank",
+      "brand": "ACB",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 10,
@@ -3215,14 +3215,14 @@
       "pillar_pct": 41.7
     },
     {
-      "brand": "ACB",
+      "brand": "VietinBank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 10,
       "pillar_pct": 41.7
     },
     {
-      "brand": "VietinBank",
+      "brand": "Sacombank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 10,
@@ -3243,14 +3243,14 @@
       "pillar_pct": 25.0
     },
     {
-      "brand": "HSBC Vietnam",
+      "brand": "HDBank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 5,
       "pillar_pct": 20.8
     },
     {
-      "brand": "HDBank",
+      "brand": "HSBC Vietnam",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 5,
@@ -3264,13 +3264,6 @@
       "pillar_pct": 16.7
     },
     {
-      "brand": "BVBank",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 16.7
-    },
-    {
       "brand": "Shinhan Bank Vietnam",
       "pillar": "Hygienic",
       "is_own": false,
@@ -3278,14 +3271,21 @@
       "pillar_pct": 16.7
     },
     {
-      "brand": "MSB",
+      "brand": "BVBank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 4,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "Standard Chartered Vietnam",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 3,
       "pillar_pct": 12.5
     },
     {
-      "brand": "Standard Chartered Vietnam",
+      "brand": "MSB",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 3,
@@ -3306,28 +3306,14 @@
       "pillar_pct": 8.3
     },
     {
+      "brand": "Eximbank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 4.2
+    },
+    {
       "brand": "OCB",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 4.2
-    },
-    {
-      "brand": "BAC A BANK",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 4.2
-    },
-    {
-      "brand": "SHB",
-      "pillar": "Hygienic",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 4.2
-    },
-    {
-      "brand": "PVcomBank",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 1,
@@ -3341,7 +3327,7 @@
       "pillar_pct": 4.2
     },
     {
-      "brand": "Eximbank",
+      "brand": "SHB",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 1,
@@ -3349,6 +3335,20 @@
     },
     {
       "brand": "Nam A Bank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 4.2
+    },
+    {
+      "brand": "PVcomBank",
+      "pillar": "Hygienic",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 4.2
+    },
+    {
+      "brand": "BAC A BANK",
       "pillar": "Hygienic",
       "is_own": false,
       "mentions": 1,
@@ -3383,13 +3383,6 @@
       "pillar_pct": 66.7
     },
     {
-      "brand": "Timo",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 6,
-      "pillar_pct": 50.0
-    },
-    {
       "brand": "BIDV",
       "pillar": "Low priority",
       "is_own": false,
@@ -3400,6 +3393,13 @@
       "brand": "Cake by VPBank",
       "pillar": "Low priority",
       "is_own": true,
+      "mentions": 6,
+      "pillar_pct": 50.0
+    },
+    {
+      "brand": "Timo",
+      "pillar": "Low priority",
+      "is_own": false,
       "mentions": 6,
       "pillar_pct": 50.0
     },
@@ -3418,6 +3418,13 @@
       "pillar_pct": 41.7
     },
     {
+      "brand": "Agribank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 4,
+      "pillar_pct": 33.3
+    },
+    {
       "brand": "ACB",
       "pillar": "Low priority",
       "is_own": false,
@@ -3432,46 +3439,11 @@
       "pillar_pct": 33.3
     },
     {
-      "brand": "Agribank",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 4,
-      "pillar_pct": 33.3
-    },
-    {
       "brand": "HSBC Vietnam",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 3,
       "pillar_pct": 25.0
-    },
-    {
-      "brand": "VIB",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 16.7
-    },
-    {
-      "brand": "VietinBank",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 16.7
-    },
-    {
-      "brand": "LPBank",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 16.7
-    },
-    {
-      "brand": "Shinhan Bank Vietnam",
-      "pillar": "Low priority",
-      "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 16.7
     },
     {
       "brand": "HDBank",
@@ -3488,11 +3460,32 @@
       "pillar_pct": 16.7
     },
     {
-      "brand": "Standard Chartered Vietnam",
+      "brand": "Shinhan Bank Vietnam",
       "pillar": "Low priority",
       "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 8.3
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "VietinBank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "VIB",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
+    },
+    {
+      "brand": "LPBank",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 16.7
     },
     {
       "brand": "Sacombank",
@@ -3502,7 +3495,7 @@
       "pillar_pct": 8.3
     },
     {
-      "brand": "Nam A Bank",
+      "brand": "MSB",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 1,
@@ -3516,7 +3509,7 @@
       "pillar_pct": 8.3
     },
     {
-      "brand": "SeABank",
+      "brand": "Nam A Bank",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 1,
@@ -3530,7 +3523,14 @@
       "pillar_pct": 8.3
     },
     {
-      "brand": "MSB",
+      "brand": "Standard Chartered Vietnam",
+      "pillar": "Low priority",
+      "is_own": false,
+      "mentions": 1,
+      "pillar_pct": 8.3
+    },
+    {
+      "brand": "SeABank",
       "pillar": "Low priority",
       "is_own": false,
       "mentions": 1,
@@ -3558,14 +3558,14 @@
       "pillar_pct": 72.5
     },
     {
-      "brand": "VPBank",
+      "brand": "MB Bank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 27,
       "pillar_pct": 67.5
     },
     {
-      "brand": "MB Bank",
+      "brand": "VPBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 27,
@@ -3593,14 +3593,14 @@
       "pillar_pct": 50.0
     },
     {
-      "brand": "Agribank",
+      "brand": "TPBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 19,
       "pillar_pct": 47.5
     },
     {
-      "brand": "TPBank",
+      "brand": "Agribank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 19,
@@ -3614,16 +3614,16 @@
       "pillar_pct": 30.0
     },
     {
-      "brand": "Sacombank",
+      "brand": "Cake by VPBank",
       "pillar": "Motivator",
-      "is_own": false,
+      "is_own": true,
       "mentions": 8,
       "pillar_pct": 20.0
     },
     {
-      "brand": "Cake by VPBank",
+      "brand": "Sacombank",
       "pillar": "Motivator",
-      "is_own": true,
+      "is_own": false,
       "mentions": 8,
       "pillar_pct": 20.0
     },
@@ -3642,14 +3642,14 @@
       "pillar_pct": 15.0
     },
     {
-      "brand": "Standard Chartered Vietnam",
+      "brand": "Timo",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 5,
       "pillar_pct": 12.5
     },
     {
-      "brand": "Timo",
+      "brand": "Standard Chartered Vietnam",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 5,
@@ -3663,13 +3663,6 @@
       "pillar_pct": 10.0
     },
     {
-      "brand": "BVBank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 3,
-      "pillar_pct": 7.5
-    },
-    {
       "brand": "BAC A BANK",
       "pillar": "Motivator",
       "is_own": false,
@@ -3677,7 +3670,35 @@
       "pillar_pct": 7.5
     },
     {
-      "brand": "UOB Vietnam",
+      "brand": "BVBank",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 3,
+      "pillar_pct": 7.5
+    },
+    {
+      "brand": "MSB",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 5.0
+    },
+    {
+      "brand": "SHB",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 5.0
+    },
+    {
+      "brand": "PVcomBank",
+      "pillar": "Motivator",
+      "is_own": false,
+      "mentions": 2,
+      "pillar_pct": 5.0
+    },
+    {
+      "brand": "OCB",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 2,
@@ -3698,14 +3719,7 @@
       "pillar_pct": 5.0
     },
     {
-      "brand": "PVcomBank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 5.0
-    },
-    {
-      "brand": "SHB",
+      "brand": "UOB Vietnam",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 2,
@@ -3719,18 +3733,18 @@
       "pillar_pct": 5.0
     },
     {
-      "brand": "OCB",
+      "brand": "Woori Bank Vietnam",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 5.0
+      "mentions": 1,
+      "pillar_pct": 2.5
     },
     {
-      "brand": "MSB",
+      "brand": "OceanBank",
       "pillar": "Motivator",
       "is_own": false,
-      "mentions": 2,
-      "pillar_pct": 5.0
+      "mentions": 1,
+      "pillar_pct": 2.5
     },
     {
       "brand": "Vietbank",
@@ -3747,21 +3761,7 @@
       "pillar_pct": 2.5
     },
     {
-      "brand": "KienlongBank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
-    },
-    {
       "brand": "SeABank",
-      "pillar": "Motivator",
-      "is_own": false,
-      "mentions": 1,
-      "pillar_pct": 2.5
-    },
-    {
-      "brand": "OceanBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 1,
@@ -3775,7 +3775,7 @@
       "pillar_pct": 2.5
     },
     {
-      "brand": "Woori Bank Vietnam",
+      "brand": "KienlongBank",
       "pillar": "Motivator",
       "is_own": false,
       "mentions": 1,
@@ -4096,6 +4096,635 @@
       "rank": 35
     }
   ],
+  "methodology": {
+    "questions": [
+      {
+        "prompt_id": 1,
+        "pillar": "Motivator",
+        "attribute": "Provides products/services that meet my needs",
+        "product": "savings",
+        "text_vi": "Tôi có một khoản tiền nhàn rỗi và muốn chọn ngân hàng có sản phẩm tiết kiệm phù hợp nhất với nhu cầu của mình ở Việt Nam, nên chọn ngân hàng nào?",
+        "text_en": "Best savings fit for my needs in Vietnam?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 3
+      },
+      {
+        "prompt_id": 2,
+        "pillar": "Motivator",
+        "attribute": "Provides products/services that meet my needs",
+        "product": "general",
+        "text_vi": "Là người lần đầu sử dụng dịch vụ ngân hàng, tôi nên chọn ngân hàng nào ở Việt Nam có sản phẩm phù hợp với nhu cầu của mình?",
+        "text_en": "First-timer: which Vietnamese bank fits my needs?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 2
+      },
+      {
+        "prompt_id": 3,
+        "pillar": "Motivator",
+        "attribute": "Has clear and transparent interest rates and fees",
+        "product": "cards",
+        "text_vi": "Tôi sợ phí ẩn khi dùng thẻ tín dụng; ngân hàng nào ở Việt Nam minh bạch, rõ ràng về lãi suất và phí thẻ nhất?",
+        "text_en": "Most transparent credit-card fees in Vietnam?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 4,
+        "pillar": "Motivator",
+        "attribute": "Has clear and transparent interest rates and fees",
+        "product": "loan",
+        "text_vi": "Ngân hàng nào ở Việt Nam công khai lãi suất và phí vay rõ ràng, không phát sinh chi phí bất ngờ?",
+        "text_en": "Clear loan rates, no surprise fees?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 5,
+        "pillar": "Motivator",
+        "attribute": "Has easy and convenient repayment",
+        "product": "loan",
+        "text_vi": "Tôi muốn vay tiêu dùng với cách trả nợ linh hoạt và nhẹ nhàng hằng tháng, nên chọn ngân hàng nào ở Việt Nam?",
+        "text_en": "Flexible, easy monthly repayment?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 6,
+        "pillar": "Motivator",
+        "attribute": "Is a trustworthy and honest brand",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam được khách hàng đánh giá là uy tín và trung thực nhất để gửi tiền và vay vốn?",
+        "text_en": "Most trustworthy & honest bank?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 7,
+        "pillar": "Motivator",
+        "attribute": "Has great servicing of customers",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam có dịch vụ chăm sóc và hỗ trợ khách hàng tốt nhất?",
+        "text_en": "Best customer service?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 8,
+        "pillar": "Motivator",
+        "attribute": "Has fast and easy disbursement/claiming",
+        "product": "loan",
+        "text_vi": "Khi vay vốn, ngân hàng nào ở Việt Nam giải ngân nhanh và thủ tục nhận tiền đơn giản nhất?",
+        "text_en": "Fastest loan disbursement?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 9,
+        "pillar": "Motivator",
+        "attribute": "Provides products/services that meet my needs",
+        "product": "SME",
+        "text_vi": "Tôi là chủ doanh nghiệp nhỏ cần dịch vụ ngân hàng phù hợp với nhu cầu kinh doanh, nên chọn ngân hàng nào ở Việt Nam?",
+        "text_en": "Best fit for a small business?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 10,
+        "pillar": "Motivator",
+        "attribute": "Is a trustworthy and honest brand",
+        "product": "general",
+        "text_vi": "Tôi lo lắng về an toàn tiền gửi; ngân hàng nào ở Việt Nam an toàn và đáng tin cậy nhất?",
+        "text_en": "Safest for my deposits?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 11,
+        "pillar": "Differentiator",
+        "attribute": "Makes me feel good",
+        "product": "general",
+        "text_vi": "Sử dụng ngân hàng nào ở Việt Nam mang lại cho khách hàng cảm giác hài lòng và tự hào nhất?",
+        "text_en": "Which bank feels best to use?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 12,
+        "pillar": "Differentiator",
+        "attribute": "Has a polite and professional payment collection process",
+        "product": "loan",
+        "text_vi": "Nếu chẳng may trễ hạn trả nợ, ngân hàng hoặc công ty tài chính nào ở Việt Nam nhắc nợ lịch sự và chuyên nghiệp?",
+        "text_en": "Most polite/professional debt collection?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 13,
+        "pillar": "Differentiator",
+        "attribute": "Has fast and easy application process",
+        "product": "loan",
+        "text_vi": "Tôi cần vay tiền gấp với thủ tục đăng ký nhanh và đơn giản, nên chọn ngân hàng nào ở Việt Nam?",
+        "text_en": "Fastest, simplest loan application?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 3
+      },
+      {
+        "prompt_id": 14,
+        "pillar": "Differentiator",
+        "attribute": "Has fast and easy application process",
+        "product": "account",
+        "text_vi": "Ngân hàng nào ở Việt Nam cho phép mở tài khoản và đăng ký dịch vụ nhanh và dễ nhất?",
+        "text_en": "Easiest account opening?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": true,
+          "Sonnet 5.5": true
+        },
+        "own_models": 4
+      },
+      {
+        "prompt_id": 15,
+        "pillar": "Differentiator",
+        "attribute": "Has great website/mobile/app experience",
+        "product": "digital",
+        "text_vi": "Tôi muốn quản lý tài chính qua ứng dụng dễ dùng và mượt mà, app ngân hàng nào ở Việt Nam có trải nghiệm tốt nhất?",
+        "text_en": "Best banking app experience?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 2
+      },
+      {
+        "prompt_id": 16,
+        "pillar": "Differentiator",
+        "attribute": "Has competitive interest rate and fees",
+        "product": "savings",
+        "text_vi": "Ngân hàng nào ở Việt Nam có lãi suất tiết kiệm và phí cạnh tranh nhất hiện nay?",
+        "text_en": "Most competitive savings rate & fees?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": true,
+          "Sonnet 5.5": true
+        },
+        "own_models": 4
+      },
+      {
+        "prompt_id": 17,
+        "pillar": "Differentiator",
+        "attribute": "Has competitive interest rate and fees",
+        "product": "loan",
+        "text_vi": "Ngân hàng nào ở Việt Nam có lãi suất vay cạnh tranh nhất cho khách hàng cá nhân?",
+        "text_en": "Most competitive personal-loan rate?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 18,
+        "pillar": "Differentiator",
+        "attribute": "Is a digital finance company",
+        "product": "digital",
+        "text_vi": "Ngân hàng số hoặc công ty tài chính số nào đáng tin và hiện đại nhất ở Việt Nam?",
+        "text_en": "Best digital finance company?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": true,
+          "Sonnet 5.5": true
+        },
+        "own_models": 4
+      },
+      {
+        "prompt_id": 19,
+        "pillar": "Differentiator",
+        "attribute": "Has high approval rate",
+        "product": "cards",
+        "text_vi": "Lịch sử tín dụng của tôi chưa hoàn hảo; ngân hàng nào ở Việt Nam có tỷ lệ duyệt thẻ tín dụng hoặc khoản vay cao?",
+        "text_en": "Highest approval despite weak credit?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 20,
+        "pillar": "Differentiator",
+        "attribute": "Has high approval rate",
+        "product": "loan",
+        "text_vi": "Người thu nhập trung bình muốn vay tiêu dùng dễ được duyệt nên chọn ngân hàng nào ở Việt Nam?",
+        "text_en": "Easy approval on average income?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 21,
+        "pillar": "Differentiator",
+        "attribute": "Makes me feel good",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam mang lại trải nghiệm khách hàng cao cấp, khiến tôi cảm thấy được trân trọng?",
+        "text_en": "Most premium, valued experience?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 22,
+        "pillar": "Hygienic",
+        "attribute": "Offers many tenure options",
+        "product": "loan",
+        "text_vi": "Tôi muốn linh hoạt chọn kỳ hạn vay phù hợp khả năng trả nợ, ngân hàng nào ở Việt Nam có nhiều lựa chọn kỳ hạn vay?",
+        "text_en": "Most loan-tenure options?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 23,
+        "pillar": "Hygienic",
+        "attribute": "Offers many tenure options",
+        "product": "savings",
+        "text_vi": "Ngân hàng nào ở Việt Nam có nhiều kỳ hạn gửi tiết kiệm linh hoạt để lựa chọn?",
+        "text_en": "Most savings-term options?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 2
+      },
+      {
+        "prompt_id": 24,
+        "pillar": "Hygienic",
+        "attribute": "Has products that are easy to find and understand",
+        "product": "general",
+        "text_vi": "Tôi không rành về tài chính; ngân hàng nào ở Việt Nam có sản phẩm dễ hiểu và dễ tìm hiểu nhất?",
+        "text_en": "Easiest products to understand?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 2
+      },
+      {
+        "prompt_id": 25,
+        "pillar": "Hygienic",
+        "attribute": "Has enough branches in convenient locations",
+        "product": "general",
+        "text_vi": "Tôi thích giao dịch trực tiếp; ngân hàng nào ở Việt Nam có mạng lưới chi nhánh và điểm giao dịch thuận tiện nhất?",
+        "text_en": "Most convenient branch network?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 26,
+        "pillar": "Hygienic",
+        "attribute": "Offers enticing deals and promotions",
+        "product": "cards",
+        "text_vi": "Ngân hàng nào ở Việt Nam đang có nhiều ưu đãi và khuyến mãi hấp dẫn cho thẻ và dịch vụ?",
+        "text_en": "Best card deals/promotions?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 1
+      },
+      {
+        "prompt_id": 27,
+        "pillar": "Hygienic",
+        "attribute": "Offers enticing deals and promotions",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam có chương trình hoàn tiền và quà tặng tốt nhất khi mở tài khoản hoặc thẻ?",
+        "text_en": "Best sign-up rewards?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 2
+      },
+      {
+        "prompt_id": 28,
+        "pillar": "Low priority",
+        "attribute": "Cares about me and my financial wellbeing",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam thực sự quan tâm và giúp cải thiện sức khỏe tài chính của khách hàng?",
+        "text_en": "Cares about my financial wellbeing?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 3
+      },
+      {
+        "prompt_id": 29,
+        "pillar": "Low priority",
+        "attribute": "Has many social and financial responsibility activities",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam tích cực trong các hoạt động trách nhiệm xã hội và cộng đồng?",
+        "text_en": "Most socially responsible bank?",
+        "own_by_model": {
+          "DeepSeek V4.1": false,
+          "Gemini 4 Argon": false,
+          "Luna 6": false,
+          "Sonnet 5.5": false
+        },
+        "own_models": 0
+      },
+      {
+        "prompt_id": 30,
+        "pillar": "Low priority",
+        "attribute": "Cares about me and my financial wellbeing",
+        "product": "general",
+        "text_vi": "Ngân hàng nào ở Việt Nam hỗ trợ khách hàng quản lý chi tiêu và giáo dục tài chính tốt nhất?",
+        "text_en": "Best at financial education?",
+        "own_by_model": {
+          "DeepSeek V4.1": true,
+          "Gemini 4 Argon": true,
+          "Luna 6": false,
+          "Sonnet 5.5": true
+        },
+        "own_models": 3
+      }
+    ],
+    "by_pillar": [
+      {
+        "pillar": "Differentiator",
+        "prompts": 11,
+        "own_hits": 19,
+        "own_pct": 43.2
+      },
+      {
+        "pillar": "Motivator",
+        "prompts": 10,
+        "own_hits": 8,
+        "own_pct": 20.0
+      },
+      {
+        "pillar": "Hygienic",
+        "prompts": 6,
+        "own_hits": 8,
+        "own_pct": 33.3
+      },
+      {
+        "pillar": "Low priority",
+        "prompts": 3,
+        "own_hits": 6,
+        "own_pct": 50.0
+      }
+    ],
+    "by_product": [
+      {
+        "product": "general",
+        "prompts": 12,
+        "own_hits": 12,
+        "own_pct": 25.0
+      },
+      {
+        "product": "loan",
+        "prompts": 8,
+        "own_hits": 8,
+        "own_pct": 25.0
+      },
+      {
+        "product": "savings",
+        "prompts": 3,
+        "own_hits": 9,
+        "own_pct": 75.0
+      },
+      {
+        "product": "cards",
+        "prompts": 3,
+        "own_hits": 2,
+        "own_pct": 16.7
+      },
+      {
+        "product": "digital",
+        "prompts": 2,
+        "own_hits": 6,
+        "own_pct": 75.0
+      },
+      {
+        "product": "SME",
+        "prompts": 1,
+        "own_hits": 0,
+        "own_pct": 0.0
+      },
+      {
+        "product": "account",
+        "prompts": 1,
+        "own_hits": 4,
+        "own_pct": 100.0
+      }
+    ],
+    "repeated_attributes": [
+      {
+        "attribute": "Provides products/services that meet my needs",
+        "prompt_ids": [
+          1,
+          2,
+          9
+        ]
+      },
+      {
+        "attribute": "Has clear and transparent interest rates and fees",
+        "prompt_ids": [
+          3,
+          4
+        ]
+      },
+      {
+        "attribute": "Is a trustworthy and honest brand",
+        "prompt_ids": [
+          6,
+          10
+        ]
+      },
+      {
+        "attribute": "Makes me feel good",
+        "prompt_ids": [
+          11,
+          21
+        ]
+      },
+      {
+        "attribute": "Has fast and easy application process",
+        "prompt_ids": [
+          13,
+          14
+        ]
+      },
+      {
+        "attribute": "Has competitive interest rate and fees",
+        "prompt_ids": [
+          16,
+          17
+        ]
+      },
+      {
+        "attribute": "Has high approval rate",
+        "prompt_ids": [
+          19,
+          20
+        ]
+      },
+      {
+        "attribute": "Offers many tenure options",
+        "prompt_ids": [
+          22,
+          23
+        ]
+      },
+      {
+        "attribute": "Offers enticing deals and promotions",
+        "prompt_ids": [
+          26,
+          27
+        ]
+      },
+      {
+        "attribute": "Cares about me and my financial wellbeing",
+        "prompt_ids": [
+          28,
+          30
+        ]
+      }
+    ],
+    "split_prompts": 16,
+    "untracked_entities": [
+      {
+        "name": "Home Credit",
+        "answers": 21
+      },
+      {
+        "name": "FE Credit",
+        "answers": 19
+      },
+      {
+        "name": "Mcredit",
+        "answers": 10
+      },
+      {
+        "name": "HD Saison",
+        "answers": 10
+      },
+      {
+        "name": "Shinhan Finance",
+        "answers": 9
+      },
+      {
+        "name": "MoMo",
+        "answers": 8
+      },
+      {
+        "name": "ZaloPay",
+        "answers": 3
+      }
+    ],
+    "total_answers": 120
+  },
   "insights": {
     "analysis": [
       {

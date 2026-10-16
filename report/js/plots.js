@@ -296,7 +296,85 @@ export function render(d) {
   $("analysis").innerHTML = (ins.analysis || []).map((a) => `<div class="analysis-item"><h3>${esc(a.heading)}</h3><p>${esc(a.body)}</p></div>`).join("");
   $("glance").innerHTML = `<p class="l">At a glance</p><ul>${(ins.at_a_glance || []).map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`;
 
+  if (d.methodology) renderMethodology(d, own);
+
   // snippets
   $("snippets").innerHTML = (d.featured_snippets || []).map((s) =>
     `<div class="snippet ${s.sentiment}"><q>${esc(s.quote)}</q><div class="meta"><b>${esc(s.brand)}</b> · ${esc(s.model)} · ${esc(s.sentiment)}</div></div>`).join("");
+}
+
+// Methodology — the question set laid bare, with the design facts that shape the headline.
+function renderMethodology(d, own) {
+  const m = d.methodology, models = d.meta.answer_models, nM = models.length;
+  const qs = m.questions, n = qs.length;
+  const list = (ids) => ids.map((i) => `Q${i}`).join(", ");
+  const all = qs.filter((q) => q.own_models === nM).map((q) => q.prompt_id);
+  const none = qs.filter((q) => q.own_models === 0).map((q) => q.prompt_id);
+  const pill = Object.fromEntries(m.by_pillar.map((p) => [p.pillar, p.prompts]));
+  const dupes = [];
+  const seen = {};
+  qs.forEach((q) => { const k = q.attribute + "|" + q.product; (seen[k] = seen[k] || []).push(q.prompt_id); });
+  Object.entries(seen).forEach(([k, ids]) => { if (ids.length > 1) dupes.push(`${list(ids)} (${k.split("|")[0].toLowerCase()})`); });
+  const nAttr = new Set(qs.map((q) => q.attribute)).size;
+  const unt = m.untracked_entities.map((u) => `${u.name} (${u.answers})`).join(", ");
+  const mixTable = (rows, key, label) =>
+    `<table class="tbl"><thead><tr><th>${label}</th><th class="n">Questions</th><th class="n">${esc(own.name)} surfaced</th></tr></thead><tbody>` +
+    rows.map((r) => `<tr><td>${esc(r[key])}</td><td class="n">${r.prompts}</td><td class="n">${r.own_pct}%</td></tr>`).join("") +
+    `</tbody></table>`;
+
+  const html = `
+    <h3>How the questions were designed</h3>
+    <p>All ${n} questions are written in Vietnamese the way a customer would ask an AI assistant:
+    "which bank in Vietnam is best for…", often with a personal situation attached (a first-time customer,
+    worried about hidden fees, a patchy credit history). <b>No question names a bank</b>, so every brand mention
+    is unprompted. Each model answered each question once, in a fresh conversation, with the same system prompt:
+    <i lang="vi">"Bạn là trợ lý tài chính am hiểu thị trường ngân hàng Việt Nam. Trả lời ngắn gọn, thực tế, nêu tên cụ thể các
+    ngân hàng phù hợp và lý do. Nếu có thể, dẫn nguồn bằng URL đầy đủ…"</i> (a financial assistant who knows the Vietnamese
+    banking market; answer concisely, name specific suitable banks and why, cite URLs where possible). That instruction
+    steers answers toward lists of named banks. Reasoning and web search were switched on for every model whose API offers them;
+    the DeepSeek API has no web search, so its answers come from the model's training data alone.</p>
+    <p>Each question targets one customer-priority attribute, grouped into four pillars adapted from Home Credit's
+    customer-attribute framework: <b>Motivators</b> drive the choice of provider, <b>Differentiators</b> set brands apart,
+    <b>Hygienic</b> factors are table stakes, and <b>Low priority</b> factors matter least to customers when choosing.
+    ${n} questions cover ${nAttr} distinct attributes across ${m.by_product.length} product areas.</p>
+    <div class="mix">${mixTable(m.by_pillar, "pillar", "Pillar")}${mixTable(m.by_product, "product", "Product")}</div>
+    <p class="legend">"Surfaced" = share of the ${nM} models' answers to those questions that mention ${esc(own.name)}.</p>
+
+    <h3>What to keep in mind when reading the numbers</h3>
+    <ol>
+      <li><b>The question mix shapes the headline.</b> ${esc(own.name)} appears in every model's answer to ${list(all)}
+      and in none to ${list(none)}, which include branch networks, SME banking and deposit safety, where a digital-only bank
+      is rarely the natural answer. Visibility of ${own.visibility_pct}% is an average over this particular set; a set with more
+      digital or savings questions would score higher, one with more branch or business questions lower.</li>
+      <li><b>Only banks are counted.</b> The ${d.overview.tracked_brands} tracked brands are banks and digital banks.
+      Several questions invite consumer-finance companies or e-wallets too, and the answers name them often:
+      ${unt} of ${m.total_answers} answers. They don't appear in any ranking, so read the rankings as "among banks".</li>
+      <li><b>Every question counts equally.</b> The headline visibility is a simple average over questions, so pillars weigh
+      in by size: Motivator ${pill["Motivator"]}, Differentiator ${pill["Differentiator"]}, Hygienic ${pill["Hygienic"]},
+      Low priority ${pill["Low priority"]}. Figure 2b normalises within each pillar instead.</li>
+      <li><b>Some attributes are asked more than once.</b> Most repeats ask about a different product, but ${dupes.join("; ")}
+      ask about the same attribute and product, which gives that attribute extra weight.</li>
+      <li><b>Every question asks for "the best".</b> This measures who AI recommends unprompted. It does not test what AI says
+      when asked about a brand by name ("Is ${esc(own.name)} safe?") or in a head-to-head comparison, so sentiment comes only from
+      brands the models chose to mention.</li>
+      <li><b>One answer per model, one wording per question.</b> On ${m.split_prompts} of ${n} questions the models disagree
+      about whether to mention ${esc(own.name)}, and a single answer moves a question's result by ${Math.round(100 / nM)} points.
+      Treat per-question results as indicative; pillar and overall figures are steadier. Repeated runs and paraphrased
+      questions would be needed to measure that variance.</li>
+    </ol>
+
+    <h3>All ${n} questions</h3>
+    <p class="legend">Vietnamese as asked; the English line is a short paraphrase. Dots show which models mentioned
+    ${esc(own.name)}, in order: ${models.map(esc).join(", ")}.</p>
+    <div class="tblwrap"><table class="tbl qtbl"><thead><tr>
+      <th>#</th><th>Question</th><th>Pillar · product</th><th class="n">${esc(own.name)}</th></tr></thead><tbody>
+    ${qs.map((q) => `<tr>
+      <td class="n">Q${q.prompt_id}</td>
+      <td><div class="vi" lang="vi">${esc(q.text_vi)}</div><div class="en">${esc(q.text_en)}</div><div class="attr">${esc(q.attribute)}</div></td>
+      <td class="tag">${esc(q.pillar)} · ${esc(q.product)}</td>
+      <td class="n"><span class="hits" title="${models.map((mm) => `${mm}: ${q.own_by_model[mm] ? "yes" : "no"}`).join("\n")}">${
+        models.map((mm) => q.own_by_model[mm] ? '<span class="y">●</span>' : '<span class="n">○</span>').join("")}</span> ${q.own_models}/${nM}</td>
+    </tr>`).join("")}
+    </tbody></table></div>`;
+  $("methodBody").innerHTML = html;
 }

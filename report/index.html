@@ -51,8 +51,14 @@
       <div class="snippets" id="snippets"></div>
     </section>
 
+    <section class="prose method" id="methodology">
+      <h2>Methodology &amp; questions</h2>
+      <p class="src">How the 30 questions were designed, what each one surfaced, and what that means for the numbers above</p>
+      <div id="methodBody"></div>
+    </section>
+
     <footer>
-      Methodology: 30 prompts about Vietnamese banking products/services, each asked on every available model.
+      Methodology: 30 unbranded Vietnamese prompts (full list <a href="#methodology">above</a>), each asked once on every model.
       Answers parsed for brand mentions (alias matching), citations (URL extraction) and per-brand sentiment (LLM-scored).
       Metrics aggregated into visibility %, share of voice, sentiment and source mix; insights written by Claude Opus 4.8; sentiment scored by Gemini 4 Argon.
       Sentiment is suppressed for any brand with fewer than 10 mentions (too few to score reliably). Each brand domain
