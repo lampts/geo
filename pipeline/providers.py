@@ -91,19 +91,42 @@ def _deepseek(model, system, user, key, thinking, search):
     return out["choices"][0]["message"]["content"], _u(u.get("prompt_tokens"), u.get("completion_tokens"), rt)
 
 
+# Models that predate adaptive thinking / dynamic-filtering web search keep the old shapes.
+_ANTHROPIC_LEGACY = ("claude-3", "claude-haiku-4-5", "claude-sonnet-4-5", "claude-opus-4-5",
+                     "claude-opus-4-1", "claude-opus-4-0", "claude-sonnet-4-0")
+
+
 def _anthropic(model, system, user, key, thinking, search):
-    body = {"model": model, "max_tokens": 8000, "system": system,
+    legacy = model.startswith(_ANTHROPIC_LEGACY)
+    body = {"model": model, "max_tokens": 16000, "system": system,
             "messages": [{"role": "user", "content": user}]}
+    headers = {"x-api-key": key, "anthropic-version": "2023-06-01", "Content-Type": "application/json"}
     if thinking:
-        body["thinking"] = {"type": "enabled", "budget_tokens": 4000}
+        # 4.6+ use adaptive thinking; budget_tokens is a 400 on Sonnet 5.5 / Opus 5.x.
+        body["thinking"] = ({"type": "enabled", "budget_tokens": 4000} if legacy
+                            else {"type": "adaptive"})
     if search:
-        body["tools"] = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 4}]
-    out = _post("https://api.anthropic.com/v1/messages",
-                {"x-api-key": key, "anthropic-version": "2023-06-01", "Content-Type": "application/json"}, body)
+        body["tools"] = [{"type": "web_search_20250305" if legacy else "web_search_20260209",
+                          "name": "web_search", "max_uses": 4}]
+    if model.startswith("claude-sonnet-5-5"):
+        # server-side refusal fallback (routes by refusal category)
+        headers["anthropic-beta"] = "server-side-fallback-2026-07-01"
+        body["fallbacks"] = "default"
+    inp = out_tok = 0
+    for _ in range(4):  # server tools may return pause_turn; resend to let the turn finish
+        out = _post("https://api.anthropic.com/v1/messages", headers, body)
+        u = out.get("usage", {}) or {}
+        inp += u.get("input_tokens", 0) or 0
+        out_tok += u.get("output_tokens", 0) or 0
+        if out.get("stop_reason") != "pause_turn":
+            break
+        body["messages"] = [body["messages"][0], {"role": "assistant", "content": out["content"]}]
+    if out.get("stop_reason") == "refusal":
+        cat = (out.get("stop_details") or {}).get("category")
+        raise RuntimeError(f"refusal (category={cat})")
     text = "".join(b.get("text", "") for b in out.get("content", []) if b.get("type") == "text")
-    u = out.get("usage", {}) or {}
-    # Anthropic counts thinking inside output_tokens; surface a separate estimate if present.
-    return text, _u(u.get("input_tokens"), u.get("output_tokens"))
+    # Anthropic counts thinking inside output_tokens.
+    return text, _u(inp, out_tok)
 
 
 def _gemini(model, system, user, key, thinking, search):

@@ -1,9 +1,65 @@
 {
-  "_note": "USD per 1M tokens. Source: llm-prices.com (fetched 2026-06-18). reasoning tokens billed at output rate. search_per_call = web-search tool fee (USD/request) — NOT on llm-prices.com (token pricing only); set to 0 here, adjust if your provider bills it separately. GPT-5.5 uses the <=272k input tier.",
+  "_note": "USD per 1M tokens. Source: llm-prices.com (fetched 2026-06-18). reasoning tokens billed at output rate. search_per_call = web-search tool fee (USD/request) \u2014 NOT on llm-prices.com (token pricing only); set to 0 here, adjust if your provider bills it separately. GPT-5.5 uses the <=272k input tier. | 2026-10-15 gen2: gemini-3.6-flash assumed = 3.5 price (not yet published); gpt-6-luna per OpenAI ($0.10/$0.50); deepseek-flash (V4.1) peak list price $0.30/$1.20; claude-opus-5-5 answered in-session (no API spend). | gemini-4-argon: intro price $2/$10 until 2026-11-30 (list $4/$20 from 2026-12-01); output includes thinking.",
   "models": [
-    {"model_id": "gpt-5.5",           "input_per_m": 5.0,  "output_per_m": 30.0, "search_per_call": 0.0},
-    {"model_id": "claude-opus-4-6",   "input_per_m": 5.0,  "output_per_m": 25.0, "search_per_call": 0.0},
-    {"model_id": "gemini-3.5-flash",  "input_per_m": 1.5,  "output_per_m": 9.0,  "search_per_call": 0.0},
-    {"model_id": "deepseek-v4-flash", "input_per_m": 0.14, "output_per_m": 0.28, "search_per_call": 0.0}
+    {
+      "model_id": "gpt-5.5",
+      "input_per_m": 5.0,
+      "output_per_m": 30.0,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "claude-opus-4-6",
+      "input_per_m": 5.0,
+      "output_per_m": 25.0,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "gemini-3.5-flash",
+      "input_per_m": 1.5,
+      "output_per_m": 9.0,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "deepseek-v4-flash",
+      "input_per_m": 0.14,
+      "output_per_m": 0.28,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "claude-opus-5-5",
+      "input_per_m": 0.0,
+      "output_per_m": 0.0,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "gemini-3.6-flash",
+      "input_per_m": 1.5,
+      "output_per_m": 9.0,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "gpt-6.1-luna",
+      "input_per_m": 0.1,
+      "output_per_m": 0.5,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "gpt-6-luna",
+      "input_per_m": 0.1,
+      "output_per_m": 0.5,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "deepseek-flash",
+      "input_per_m": 0.3,
+      "output_per_m": 1.2,
+      "search_per_call": 0.0
+    },
+    {
+      "model_id": "gemini-4-argon",
+      "input_per_m": 2.0,
+      "output_per_m": 10.0,
+      "search_per_call": 0.0
+    }
   ]
 }

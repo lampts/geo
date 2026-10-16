@@ -45,10 +45,13 @@ duckdb brandllm.duckdb < analysis/q_cake.sql     # own-brand (Cake) research que
 Stages (`--stage ingest|harmonize|analyze|export|all`): ingest RAW → harmonize CORE
 → analyze MARTS → export `report/summary.json`. Column/metric reference: `DICTIONARY.md`.
 
-The 4 answer models (configurable in `config.py`), all run with **thinking +
-web-search** where the provider supports it:
-OpenAI `gpt-5.5` · Anthropic `claude-opus-4-6` · Gemini `gemini-3.5-flash` · DeepSeek `deepseek-v4-flash`.
-Sentiment parser: `gemini-3.5-flash` (kept off the OpenAI key). Insights model: `claude-opus-4-8`.
+The 4 answer models (configurable in `config.py`, run id `2026-10-gen2`), all run with
+**thinking + web-search** where the provider supports it:
+Anthropic `claude-sonnet-5-5` · Gemini `gemini-4-argon` ·
+OpenAI `gpt-6-luna` (`gpt-6.1-luna` not yet served by the API) · DeepSeek `deepseek-flash` (V4.1).
+Previous run (`baseline`, Jun 2026): `gpt-5.5`, `claude-opus-4-6`, `gemini-3.5-flash`, `deepseek-v4-flash`
+— archived under `build/runs/baseline/`.
+Sentiment parser: `gemini-4-argon` (kept off the OpenAI key). Insights model: `claude-opus-4-8`.
 Own brand: **Cake by VPBank** (`OWN_BRAND_ID = 40`).
 
 Data-quality guards:
@@ -62,6 +65,16 @@ Data-quality guards:
 Provider caveats: DeepSeek has no server-side web-search tool (degrades to none);
 gpt-5.x reject `temperature` and use the Responses API for search; newer Opus
 deprecates `temperature`.
+
+## In-session models
+
+A model flagged `in_session: True` is not called over the API; its answers are written
+in a Claude Code session and loaded with `python -m pipeline.in_session answers.json`.
+**Not recommended for the report:** an Opus 5.5 in-session run (Oct 2026) was discarded
+because the session knew the client brand and its answers over-mentioned Cake. Prefer API runs.
+
+Keys are read from `.env` (overrides shell exports). `python -m pipeline.run_queries --only gemini,openai`
+re-queries just those providers and keeps cached answers for the rest of the *current* model set.
 
 ## Run
 

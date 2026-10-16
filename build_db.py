@@ -232,7 +232,7 @@ def rows(con, sql, params=None):
     return [dict(zip(cols, r)) for r in cur.fetchall()]
 
 
-def export(con, run_id):
+def export(con, run_id, fresh=False):
     tot = rows(con, "SELECT * FROM v_run_totals WHERE run_id=?", [run_id])[0]
     rk = rows(con, "SELECT * FROM v_brand_visibility WHERE run_id=? ORDER BY rank", [run_id])
     sent = {r["brand_id"]: r for r in rows(con, "SELECT * FROM v_sentiment_by_brand WHERE run_id=?", [run_id])}
@@ -315,15 +315,16 @@ def export(con, run_id):
         } for r in rows(con, "SELECT * FROM v_ai_equity WHERE run_id=? AND mentions>0 ORDER BY aei_rank", [run_id])],
     }
 
-    # carry insights + featured snippets from the previous summary.json (no API spend)
-    if os.path.exists(config.SUMMARY_FILE):
-        prev = json.load(open(config.SUMMARY_FILE, encoding="utf-8"))
+    # carry insights + featured snippets from the previous summary.json (no API spend) —
+    # only when it is the same run; a new run must not inherit another run's narrative.
+    prev = json.load(open(config.SUMMARY_FILE, encoding="utf-8")) if os.path.exists(config.SUMMARY_FILE) else {}
+    if not fresh and prev.get("meta", {}).get("run_id") == run_id:
         summary["insights"] = prev.get("insights", {"analysis": [], "at_a_glance": [], "generated_by": "carried-over"})
         summary["meta"]["insights_model"] = prev.get("meta", {}).get("insights_model")
         summary["featured_snippets"] = prev.get("featured_snippets", [])
     else:
         summary["insights"] = {"analysis": [], "at_a_glance": [], "generated_by": "none"}
-        summary["featured_snippets"] = []
+        summary["featured_snippets"] = aggregate.run()["featured_snippets"]  # from build/extracted.json
 
     json.dump(summary, open(config.SUMMARY_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"  exported -> {config.SUMMARY_FILE} (run_id={run_id})")
@@ -334,6 +335,8 @@ def main():
     ap.add_argument("--run-id", default="baseline")
     ap.add_argument("--stage", choices=["ingest", "harmonize", "analyze", "export", "all"], default="all")
     ap.add_argument("--export", action="store_true", help="shortcut for --stage export")
+    ap.add_argument("--fresh", action="store_true",
+                    help="don't carry insights/snippets from the existing summary.json (answers changed)")
     args = ap.parse_args()
     stage = "export" if args.export else args.stage
 
@@ -347,7 +350,7 @@ def main():
         analyze(con)
     if stage in ("export", "all"):
         analyze(con)  # ensure views exist
-        export(con, args.run_id)
+        export(con, args.run_id, fresh=args.fresh)
     con.close()
     print("done.")
 

@@ -8,6 +8,7 @@
 import json
 import re
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor
 
 import config
 from pipeline import providers
@@ -71,8 +72,14 @@ def sentiment_for(answer, brand_names):
             v = str(data.get(n, "neutral")).lower()
             out[n] = v if v in ("positive", "neutral", "negative") else "neutral"
         return out
-    except Exception:  # noqa: BLE001
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! sentiment parser failed, defaulting to neutral: {str(e)[:120]}")
+        PARSER_FAILURES.append(str(e)[:200])
         return default
+
+
+PARSER_FAILURES = []
+WORKERS = 8  # parallel parser calls
 
 
 def run():
@@ -80,24 +87,29 @@ def run():
     answers = json.load(open(config.RAW_ANSWERS_FILE, encoding="utf-8"))
     matchers = build_matchers(brands)
 
-    rows = []
-    for i, a in enumerate(answers):
-        if a.get("status") != "ok" or not a.get("answer"):
-            continue
+    def one(a):
         mentioned = find_mentions(a["answer"], brands, matchers)
         names = [b["name"] for b in mentioned]
         senti = sentiment_for(a["answer"], names)
         urls = URL_RE.findall(a["answer"])
-        rows.append({
+        return {
             "prompt_id": a["prompt_id"], "category": a["category"],
             "model_key": a["model_key"], "model_label": a["model_label"],
             "mentions": [{"brand_id": b["brand_id"], "name": b["name"],
                           "sentiment": senti.get(b["name"], "neutral")} for b in mentioned],
             "citations": [{"url": u, "domain": domain_of(u)} for u in urls],
             "answer": a["answer"],
-        })
-        if (i + 1) % 10 == 0:
-            print(f"  extracted {i + 1}/{len(answers)}")
+        }
+
+    todo = [a for a in answers if a.get("status") == "ok" and a.get("answer")]
+    rows = []
+    with ThreadPoolExecutor(WORKERS) as ex:  # map() keeps input order
+        for i, row in enumerate(ex.map(one, todo)):
+            rows.append(row)
+            if (i + 1) % 10 == 0:
+                print(f"  extracted {i + 1}/{len(todo)}")
+    if PARSER_FAILURES:
+        print(f"  ! {len(PARSER_FAILURES)} answers fell back to neutral sentiment")
 
     json.dump(rows, open(config.EXTRACTED_FILE, "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
