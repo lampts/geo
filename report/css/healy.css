@@ -96,10 +96,37 @@ figcaption { max-width: var(--measure); margin: 12px auto 0; font-family: var(--
 .snippet .meta { margin-top: 10px; font-size: 12.5px; color: var(--ink-faint); }
 .snippet .meta b { color: var(--ink-soft); }
 
+/* ---- methodology ---- */
+.method h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; margin: 32px 0 8px; }
+.method p, .method li { color: var(--ink-soft); }
+.method ol { padding-left: 22px; }
+.method li { margin: 0 0 10px; }
+.method li b { color: var(--ink); }
+.mix { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 8px 0 0; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tbl th { text-align: left; font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); border-bottom: 2px solid var(--ink); padding: 6px 8px 6px 0; }
+.tbl td { border-bottom: 1px solid var(--rule); padding: 8px 8px 8px 0; vertical-align: top; }
+.tbl td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.qtbl .vi { color: var(--ink); }
+.qtbl .en { font-size: 13px; color: var(--ink-faint); font-style: italic; }
+.qtbl .tag { font-size: 12.5px; color: var(--ink-soft); white-space: nowrap; }
+.qtbl .attr { font-size: 12.5px; color: var(--ink-faint); }
+.hits { white-space: nowrap; letter-spacing: 2px; font-size: 15px; }
+.hits .y { color: var(--own); }
+.hits .n { color: #d6d2c8; }
+.legend { font-size: 13px; color: var(--ink-faint); margin: 6px 0 12px; }
+.tblwrap { overflow-x: auto; }
+footer a { color: inherit; }
+
 footer { max-width: var(--measure); margin: 80px auto 0; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-faint); }
 
 @media (max-width: 700px) {
   h1 { font-size: 30px; }
   .snippets { grid-template-columns: 1fr; }
+  .mix { grid-template-columns: 1fr; }
+  .qtbl thead { display: none; }
+  .qtbl tr { display: block; border-bottom: 1px solid var(--rule); padding: 10px 0; }
+  .qtbl td { display: block; border: 0; padding: 2px 0; }
+  .qtbl td.n { text-align: left; }
   body { font-size: 16px; }
 }

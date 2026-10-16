@@ -17,6 +17,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 
 import duckdb
 
@@ -315,6 +316,8 @@ def export(con, run_id, fresh=False):
         } for r in rows(con, "SELECT * FROM v_ai_equity WHERE run_id=? AND mentions>0 ORDER BY aei_rank", [run_id])],
     }
 
+    summary["methodology"] = methodology(con, run_id, models)
+
     # carry insights + featured snippets from the previous summary.json (no API spend) —
     # only when it is the same run; a new run must not inherit another run's narrative.
     prev = json.load(open(config.SUMMARY_FILE, encoding="utf-8")) if os.path.exists(config.SUMMARY_FILE) else {}
@@ -328,6 +331,60 @@ def export(con, run_id, fresh=False):
 
     json.dump(summary, open(config.SUMMARY_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"  exported -> {config.SUMMARY_FILE} (run_id={run_id})")
+
+
+def methodology(con, run_id, models):
+    """The question set laid bare: every prompt with its framing, which models
+    surfaced the own brand on it, and the design facts that shape the headline."""
+    prompts = rows(con, "SELECT * FROM dim_prompt ORDER BY prompt_id")
+    hits = rows(con, """
+        SELECT a.prompt_id, m.label AS model,
+               bool_or(fm.brand_id = ?) AS own,
+               count(DISTINCT fm.brand_id) FILTER (WHERE fm.brand_id <> ?) AS rivals
+        FROM fact_answer a JOIN dim_model m USING (model_key)
+        LEFT JOIN fact_mention fm USING (answer_id)
+        WHERE a.run_id = ? AND a.status = 'ok' GROUP BY 1, 2""",
+        [config.OWN_BRAND_ID, config.OWN_BRAND_ID, run_id])
+    by = {(h["prompt_id"], h["model"]): h for h in hits}
+
+    qs = []
+    for p in prompts:
+        per = {m: bool(by.get((p["prompt_id"], m), {}).get("own")) for m in models}
+        qs.append({
+            "prompt_id": p["prompt_id"], "pillar": p["pillar"], "attribute": p["attribute"],
+            "product": p["product"], "text_vi": p["text_vi"], "text_en": p["text_en"],
+            "own_by_model": per, "own_models": sum(per.values()),
+        })
+
+    def tally(key):
+        out = {}
+        for q in qs:
+            t = out.setdefault(q[key], {"prompts": 0, "own_hits": 0})
+            t["prompts"] += 1
+            t["own_hits"] += q["own_models"]
+        n = len(models)
+        return [{key: k, **v, "own_pct": round(100 * v["own_hits"] / (v["prompts"] * n), 1)}
+                for k, v in sorted(out.items(), key=lambda kv: -kv[1]["prompts"])]
+
+    attrs = {}
+    for q in qs:
+        attrs.setdefault(q["attribute"], []).append(q["prompt_id"])
+
+    texts = [r["answer_text"] or "" for r in rows(
+        con, "SELECT answer_text FROM fact_answer WHERE run_id=? AND status='ok'", [run_id])]
+    untracked = sorted(
+        ({"name": n, "answers": sum(bool(re.search(pat, t, re.I)) for t in texts)}
+         for n, pat in config.UNTRACKED_WATCH.items()), key=lambda r: -r["answers"])
+
+    return {
+        "questions": qs,
+        "by_pillar": tally("pillar"),
+        "by_product": tally("product"),
+        "repeated_attributes": [{"attribute": a, "prompt_ids": ids} for a, ids in attrs.items() if len(ids) > 1],
+        "split_prompts": sum(0 < q["own_models"] < len(models) for q in qs),
+        "untracked_entities": [u for u in untracked if u["answers"]],
+        "total_answers": len(texts),
+    }
 
 
 def main():

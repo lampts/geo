@@ -39,8 +39,16 @@ OWN_BRAND_ID = 40
 SENTIMENT_MIN_MENTIONS = 10
 
 REPORT_TITLE = "AI Visibility Report — Vietnamese Banking"
-CLIENT = "VIB"
+CLIENT = "Cake by VPBank"
 TOPIC = "Vietnamese banking products & services"
+
+# Lenders/e-wallets the prompts can surface but brands.json doesn't track (it is
+# banks only). Counted for the methodology note so readers see what's left out.
+UNTRACKED_WATCH = {
+    "Home Credit": r"home ?credit", "FE Credit": r"fe ?credit", "Mcredit": r"mcredit",
+    "HD Saison": r"hd ?saison", "Shinhan Finance": r"shinhan finance",
+    "MoMo": r"\bmomo\b", "ZaloPay": r"zalo ?pay",
+}
 
 # Paths
 ROOT = os.path.dirname(os.path.abspath(__file__))
